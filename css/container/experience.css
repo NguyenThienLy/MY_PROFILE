@@ -1,0 +1,9 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.experience--mt-300 {
+    margin-top: 300px;
+}

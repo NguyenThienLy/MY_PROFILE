@@ -1,0 +1,41 @@
+.other-project {
+  height: 300px;
+  background-color: rgb(23, 42, 69);
+  padding: 30px 20px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.other-project__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-project__icon {
+  color: #64ffda;
+  font-size: 40px;
+}
+
+.other-project__body {
+  flex-grow: 2
+}
+
+.other-project__title {
+  color: rgb(204, 214, 246);
+}
+
+.other-project__content {
+  margin-top: 0;
+  color: rgb(168, 178, 209);
+}
+
+
+.other-project__footer {
+  
+}
+
+.fa-gitlab{
+ float: right;
+ color: rgb(100, 255, 218);
+}

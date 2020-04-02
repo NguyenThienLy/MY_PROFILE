@@ -1,0 +1,40 @@
+
+.list-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(136, 146, 176);
+    font-size: 16px;
+}
+
+.list-content--col-two {
+    columns: 2;
+}
+
+.list-content--font-secondary {
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+}
+
+.list-content--mt-30 {
+    margin-top: 30px;
+}
+
+.list-content__item {
+    margin-right: 10px;
+    padding-left: 20px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.list-content__item::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    top: 15%;
+    color: rgb(100, 255, 218);
+    font-size: 14px;
+    line-height: 12px;
+}
+

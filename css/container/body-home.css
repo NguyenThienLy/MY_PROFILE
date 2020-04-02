@@ -1,0 +1,16 @@
+.body-home {
+    padding: 0 160px;
+    position: relative;
+}
+
+.body-home__info-contact {
+    margin: 100px 0;
+}
+
+.body-home__experience {
+    margin-top: 300px;
+}
+
+.body-home__container-project {
+    margin-top: 300px;
+}

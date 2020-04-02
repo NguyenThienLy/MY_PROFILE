@@ -1,0 +1,7 @@
+html, body {
+    margin: 0;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a192f;
+    scroll-behavior: smooth;
+  }

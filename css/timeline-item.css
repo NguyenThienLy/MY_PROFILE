@@ -1,0 +1,34 @@
+.timeline-item {
+  float: left;
+  width: 70%;
+  padding: 0 20px;
+  height: 100%;
+  color: rgb(141, 152, 181);
+}
+
+.timeline-item__header {
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.timeline-item__link {
+  margin-left: 10px;
+  color: rgb(92, 234, 202);
+  text-decoration: none;
+}
+
+.timeline-item__title {
+  margin: 0;
+  color: #adb1be;
+}
+
+.timeline-item__body {
+  margin-top: 10px;
+}
+
+.timeline-item__date {
+  font-size: 14px;
+  font-family: "Fira Code", monospace;
+}

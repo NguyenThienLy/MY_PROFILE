@@ -1,0 +1,77 @@
+.project {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+}
+
+.project--mt-60 {
+  margin-top: 60px;
+}
+
+.project--mt-100 {
+  margin-top: 100px;
+}
+
+.project__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.project__feature {
+  color: #64ffda;
+  font-size: 15px;
+  font-family: "Fira Code", monospace;
+}
+
+.project__name {
+  color: #ccd6f6;
+  font-size: 27px;
+  text-align: right;
+}
+
+.project__content {
+  width: 25%;
+  margin: 0;
+  color: #ccd6f6;
+  padding: 20px;
+  border: none;
+  z-index: 1;
+  background-color: rgb(23, 42, 69);
+  border-radius: 7px;
+  text-align: right;
+  color: #ccd6f6;
+  width: 45%;
+}
+
+.project__image {
+  z-index: 0;
+  position: absolute;
+  display: flex;
+}
+
+.project__src {
+  height: 400px;
+  width: 600px;
+  border-radius: 7px;
+}
+
+.project--reverse .project__name {
+  text-align: left;
+}
+
+.project--reverse .project__container {
+  align-items: flex-start;
+}
+
+.project--reverse .project__content {
+  text-align: left;
+}
+
+.project--reverse .project__image {
+  right: 0;
+}

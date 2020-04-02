@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(23, 42, 69);
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.header__list {
+    flex-grow: 2;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header__item{
+    margin: 0px 10px;
+    color: rgb(100, 255, 218);
+    font-size: 13px;
+    font-family: 'Fira Code', monospace;
+}
+
+.header__link {
+    color: rgb(204, 214, 246);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__link--ml-7 {
+    margin-left: 7px;
+}
+
+.header__link:hover{
+    color: rgb(100, 255, 218);
+}

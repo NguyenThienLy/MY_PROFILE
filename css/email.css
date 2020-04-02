@@ -1,0 +1,31 @@
+.email {
+    position: fixed;
+    right: -5%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.email__content {
+    color: rgb(204, 214, 246);
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    transform: rotate(90deg);
+    margin-bottom: 160px;
+}
+
+.email__content:hover {
+    color: rgb(100, 255, 218);
+    /* transform: translateY(-3px); */
+}
+
+.email__line {
+    border-left: 1px solid rgb(204, 214, 246);
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}

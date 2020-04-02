@@ -1,0 +1,16 @@
+.footer{
+    background-color:rgb(2, 12, 27);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__Link{
+    cursor: pointer;
+    color: rgb(10, 238, 185);
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+}

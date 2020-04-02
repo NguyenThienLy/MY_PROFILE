@@ -1,0 +1,18 @@
+.intro-personal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(41, 61, 90, 0.99);
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+.intro-personal__name {
+  margin-left: 30px;
+  color: rgb(204, 214, 246);
+  font-family: "Fira Code Light", monospace;
+}

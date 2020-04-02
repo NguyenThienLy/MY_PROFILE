@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  font-size: 24px;
+  font-weight: 600 !important;
+}
+
+.title__number {
+  margin-right: 7px;
+  color: #64ffda;
+  font-size: 17px;
+  font-family: "Fira Code", monospace;
+}
+
+.title__content {
+  color: #adb1be;
+}
+
+.title__line {
+  border-top: 0.5px solid  #adb1be;
+  width: 300px;
+  z-index: 1;
+  left: 0;
+  height: 0.5px;
+  margin-left: 10px;
+}
+
+.title--mt-100 {
+  margin-top: 100px;
+}
+
