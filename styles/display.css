@@ -1,0 +1,11 @@
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+ display: grid;
+}
+
+.d-block {
+  display: block;
+}

@@ -2,34 +2,7 @@
 
 }
 
-.other-projects--mt-300 {
-  margin-top: 300px;
-}
-
-.other-projects__header {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
-.other-projects__title {
-  color: #ccd6f6;
-  margin-bottom: 0;
-}
-
-.other-projects__detail {
-  color: #64ffda;
-  margin-top: 10px;
-}
-
 .other-projects__list {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px 20px
-}
-
-.other-projects__list--mt-50 {
-  margin-top: 50px;
 }

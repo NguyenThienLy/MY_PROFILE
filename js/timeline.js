@@ -6,10 +6,10 @@ function openCity(evt, cityName) {
     }
     tablinks = document.getElementsByClassName("timeline__btn");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" timeline__btn--active", "");
     }
     document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += " timeline__btn--active";
 }
 
 document.getElementById("defaultOpen").click();

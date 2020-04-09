@@ -1,0 +1,15 @@
+.fs-primary {
+  font-size: 14px;
+}
+
+.ff-secondary {
+  font-family: 'Fira Code', monospace;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-600 {
+  font-weight: 600;
+}

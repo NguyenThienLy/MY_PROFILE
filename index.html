@@ -4,6 +4,20 @@
 <head>
     <title>Nguyen Thien Ly</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/color.css">
+    <link rel="stylesheet" href="./styles/spacing.css">
+    <link rel="stylesheet" href="./styles/display.css">
+    <link rel="stylesheet" href="./styles/flex.css">
+    <link rel="stylesheet" href="./styles/position.css">
+    <link rel="stylesheet" href="./styles/z-index.css">
+    <link rel="stylesheet" href="./styles/text.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./styles/transform.css">
+    <link rel="stylesheet" href="./styles/cursor.css">
+    <link rel="stylesheet" href="./styles/sizing.css">
+    <link rel="stylesheet" href="./styles/border.css">
+    <link rel="stylesheet" href="./styles/float.css">
+
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/list-content.css" />
     <link rel="stylesheet" href="./css/list-item.css" />
@@ -34,175 +48,196 @@
 </head>
 
 <body>
-    <header class="header">
+    <header
+        class="header d-flex align-items-center top-0 left-50 z-index-2 position-sticky w-100 h-primary light-dark-bg-color">
         <a class="header-link" href="./index.html">
             <img class="header__logo"
                 src="https://www.nashtechglobal.com/wp-content/themes/nashtech/library/images/NashTech-logo-new.svg"
                 alt="">
         </a>
 
-        <ol class="header__list">
-            <li class="header__item">01.<a class="header__link header__link--ml-7" href="#section-about-me">About</a>
+        <ol class="header__list ml-2 d-flex justify-content-end ff-secondary">
+            <li class="header__item primary-txt-color">01.<a
+                    class="header__link ml-7 gray-txt-color txt-decoration-none" href="#section-about-me">About</a>
             </li>
-            <li class="header__item">02.<a class="header__link header__link--ml-7" href="#section-experience">Experience</a>
+            <li class="header__item primary-txt-color">02.<a
+                    class="header__link ml-7 gray-txt-color txt-decoration-none"
+                    href="#section-experience">Experience</a>
             </li>
-            <li class="header__item">03.<a class="header__link header__link--ml-7" href="#section-work">Work</a>
+            <li class="header__item primary-txt-color">03.<a
+                    class="header__link ml-7 gray-txt-color txt-decoration-none" href="#section-work">Work</a>
             </li>
-            <li class="header__item">04.<a class="header__link header__link--ml-7" href="#section-contact">Contact</a>
+            <li class="header__item primary-txt-color">04.<a
+                    class="header__link ml-7 gray-txt-color txt-decoration-none" href="#section-contact">Contact</a>
             </li>
         </ol>
 
-        <a href="#" class="btn btn--small btn--ml-50">My blog</a>
+        <a href="#"
+            class="btn btn--small ml-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center">My
+            blog</a>
     </header>
 
-    <section class="social">
-        <ul class="social__list">
+    <section class="social position-fixed bottom-0 d-flex flex-column z-index-1 align-items-center ">
+        <ul class="social__list p-0">
             <li class="social__item">
-                <a class="social__link" href="https://github.com/NguyenThienLy" target="_blank">
+                <a class="social__link dark-gray-txt-color" href="https://github.com/NguyenThienLy" target="_blank">
                     <i class="fab fa-lg fa-github">
                     </i>
                 </a>
             </li>
+
             <li class="social__item">
-                <a class="social__link" href="https://www.linkedin.com/in/NguyenThienLy2212/" target="_blank">
+                <a class="social__link dark-gray-txt-color" href="https://www.linkedin.com/in/NguyenThienLy2212/"
+                    target="_blank">
                     <i class="fab fa-lg fa-linkedin-in"></i>
                 </a>
             </li>
+
             <li class="social__item">
-                <a class="social__link" href="https://www.facebook.com/thienly.nguyen.315" target="_blank"><i
-                        class="fab fa-lg fa-facebook-f"></i>
+                <a class="social__link dark-gray-txt-color" href="https://www.facebook.com/thienly.nguyen.315"
+                    target="_blank"><i class="fab fa-lg fa-facebook-f"></i>
                 </a>
             </li>
+
             <li class="social__item">
-                <a class="social__link" href="https://dev.to/nguyenthienly" target="_blank">
+                <a class="social__link dark-gray-txt-color" href="https://dev.to/nguyenthienly" target="_blank">
                     <i class="fab fa-lg fa-dev"></i>
                 </a>
             </li>
         </ul>
-        <div class="social__line"></div>
+        <div class="social__line top-0 left-50 transform-translate-X--50"></div>
     </section>
 
-    <section class="email">
-        <a href="https://www.google.com/" class="email__content">Ly.NguyenThien@nashtechglobal.com</a>
-        <div class="email__line"></div>
+    <section class="email d-flex flex-column align-items-center position-fixed bottom-0 z-index-1">
+        <a href="https://www.google.com/"
+            class="email__content dark-gray-txt-color txt-decoration-none ff-secondary fs-primary transform-rotate-90">
+            Ly.NguyenThien@nashtechglobal.com
+        </a>
+        <div class="email__line top-0 left-50 transform-translate-X--50"></div>
     </section>
 
     <main class="body-home">
-        <section class="info-contact info-contact--mt-80">
-            <span class="info-contact__header">Hi, my name is</span>
-            <span class="info-contact__title info-contact__title--white">Nguyen Thien Ly</span>
-            <span class="info-contact__title info-contact__title--grey"> I build things for the web.</span>
-            <span class="info-contact__detail">
+        <section class="info-contact mt-secondary d-flex flex-column">
+            <span class="info-contact__header ff-secondary primary-txt-color">Hi, my name is</span>
+            <span class="info-contact__title fw-bold gray-txt-color">Nguyen Thien Ly</span>
+            <span class="info-contact__title fw-bold dark-gray-txt-color"> I build things for the web.</span>
+            <span class="info-contact__detail w-50 dark-gray-txt-color mt-5">
                 Learning and development benefits yourself and my company.
                 The goal of becoming a professional web app designer.
                 Always improving the skills to supplement the work
             </span>
 
 
-            <a href="https://www.linkedin.com/in/NguyenThienLy2212/" target="_blank" class="btn btn--big btn--mt-50">
+            <a href="https://www.linkedin.com/in/NguyenThienLy2212/" target="_blank"
+                class="btn btn--big mt-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center">
                 Get In Touch
             </a>
         </section>
 
-        <section class="about-me about-me--mt-300" id="section-about-me">
-            <div class="title">
-                <div class="title__number">0.1</div>
-                <div class="title__content">About me</div>
-                <div class="title__line"></div>
+        <section class="about-me mt-primary d-block" id="section-about-me">
+            <div class="title d-flex justify-content-start align-items-center ">
+                <div class="title__number primary-txt-color ff-secondary">0.1</div>
+                <div class="gray-txt-color fw-600">About me</div>
+                <div class="title__line ml-1"></div>
             </div>
 
-            <div class="about-me__content about-me__content--mt-60">
+            <div class="about-me__content mt-secondary d-grid">
                 <div>
-                    <p class="about-me__text">Hello! I'm Ly Nguyen, a software engineer based in <span
-                            class="about-me__text--highlight">HCMC</span>, <span
-                            class="about-me__text--highlight">HCMC</span> is
+                    <p class="about-me__text dark-gray-txt-color mt-0">Hello! I'm Ly Nguyen, a software engineer based
+                        in <span class="primary-txt-color">HCMC</span>, <span class="primary-txt-color">HCMC</span> is
                         Indochina Pearl.
                         I develop exceptional websites and web apps that provide intuitive, pixel-perfect user
                         interfaces with efficient and modern backends.
                     </p>
 
-                    <p class="about-me__text">I'm a 4 years study in <span class="about-me__text--highlight">Science
+                    <p class="about-me__text dark-gray-txt-color mt-0">I'm a 4 years study in <span
+                            class="primary-txt-color">Science
                             University</span>, I joined the
                         engineering team at <span class="about-me__text--highlight">DSV company</span>. where I work on
                         a wide variety of interesting and meaningful
                         projects on a daily basis.
                     </p>
 
-                    <p class="about-me__text">
+                    <p class="about-me__text dark-gray-txt-color mt-0">
                         Here are a few technologies I've been working with recently:
                     </p>
 
-                    <ul class="list-content list-content--col-two list-content--font-secondary">
-                        <li class="list-content__item">
+                    <ul class="list-content list-content--col-two ff-secondary fs-primary p-0 m-0 dark-gray-txt-color">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             HTML & (S)CSS
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             JavaScript (ES6+)
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             Reactjs
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             Node.js, express
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             typescript
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             MongoDB, mySQl, SQL server
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             c/c++, Winform + WPF
                         </li>
 
-                        <li class="list-content__item">
+                        <li class="list-content__item position-relative mr-1 pl-2">
                             Android
                         </li>
                     </ul>
                 </div>
 
-                <div class="avatar ">
-                    <div class="avatar__container">
-                        <img class="avatar__img"
+                <div class="avatar d-flex justify-content-end align-items-start position-relative z-index-1">
+                    <div class="avatar__container border-round z-index-1 primary-bg-color">
+                        <img class="w-100 h-100"
                             src="https://avatars1.githubusercontent.com/u/39694887?s=460&u=6987a9ac10af03ef72d39b066fd361ac84ccc871&v=4">
                     </div>
-                    <div class="avatar__border"></div>
+                    <div class="avatar__border position-absolute z-index-0 border-round"></div>
                 </div>
             </div>
         </section>
 
-        <section class="experience experience--mt-300" id="section-experience">
-            <div class="title">
-                <div class="title__number">0.2</div>
-                <div class="title__content">Where I've Worked</div>
-                <div class="title__line"></div>
+        <section class="experience mt-primary d-flex flex-column" id="section-experience">
+            <div class="title d-flex justify-content-start align-items-center">
+                <div class="title__number primary-txt-color ff-secondary">0.2</div>
+                <div class="gray-txt-color fw-600">Where I've Worked</div>
+                <div class="title__line ml-1"></div>
             </div>
 
-            <div class="timeline timeline--mt-60">
-                <div class="timeline__tab">
-                    <button class="timeline__btn" onclick="openCity(event, 'id-long-dan')"
-                        id="defaultOpen">LongDan</button>
-                    <button class="timeline__btn" onclick="openCity(event, 'id-dsv')">DSV</button>
-                    <button class="timeline__btn" onclick="openCity(event, 'id-pegasus')">PEGASUS</button>
+            <div class="timeline mt-secondary">
+                <div class="timeline__tab float-left">
+                    <button
+                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
+                        onclick="openCity(event, 'id-long-dan')" id="defaultOpen">LongDan</button>
+                    <button
+                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
+                        onclick="openCity(event, 'id-dsv')">DSV</button>
+                    <button
+                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
+                        onclick="openCity(event, 'id-pegasus')">PEGASUS</button>
                 </div>
 
-                <div id="id-long-dan" class="timeline-item">
-                    <div class="timeline-item__header">
-                        <p class="timeline-item__title">Intern marketing dev</h2>
-                            <a class="timeline-item__link" href="#">@ LongDan</a>
+                <div id="id-long-dan" class="timeline-item float-left h-100 dark-gray-txt-color">
+                    <div class="timeline-item__header d-flex align-items-center fw-600">
+                        <p class="m-0 gray-txt-color">Intern marketing dev</p>
+                        <a class="primary-txt-color ml-1 txt-decoration-none" href="#">@ LongDan</a>
                     </div>
 
-                    <div class="timeline-item__body">
-                        <span class="timeline-item__date">April 2018 - April 2018</span>
+                    <div class="mt-1">
+                        <span class="fs-primary ff-secondary">April 2018 - April 2018</span>
 
-                        <ul class="list-content list-content--mt-30">
-                            <li class="list-content__item">
+                        <ul class="list-content mt-30 p-0">
+                            <li class="list-content__item position-relative mr-1 pl-3">
                                 Developing software to manage the work for the marketing room of Kim Son - Long Dan
                                 company
                                 on C# winform
@@ -211,13 +246,13 @@
                                 on C#
                             </li>
 
-                            <li class="list-content__item">
+                            <li class="list-content__item position-relative mt-1 mr-1 pl-3">
                                 Work with a variety of different languages, platforms, frameworks, and content
                                 management
                                 systems such as C#, winform, WPF
                             </li>
 
-                            <li class="list-content__item">
+                            <li class="list-content__item position-relative mt-1 mr-1 pl-3">
                                 Communicate with multi-disciplinary teams of marketing, dev, sale, and clients on
                                 a daily basis
                             </li>
@@ -225,48 +260,48 @@
                     </div>
                 </div>
 
-                <div id="id-dsv" class="timeline-item">
-                    <div class="timeline-item__header">
-                        <p class="timeline-item__title">Intern designdeveloper</p>
-                        <a class="timeline-item__link" href="#">@ DSV</a>
+                <div id="id-dsv" class="timeline-item float-left h-100 dark-gray-txt-color">
+                    <div class="timeline-item__header timeline-item__header d-flex align-items-center fw-600">
+                        <p class="m-0 gray-txt-color">Intern designdeveloper</p>
+                        <a class="primary-txt-color ml-1 txt-decoration-none" href="#">@ DSV</a>
                     </div>
 
-                    <div class="timeline-item__body">
-                        <span class="timeline-item__date">Dec 2018 - Jan 2019</span>
+                    <div class="mt-1">
+                        <span class="fs-primary ff-secondary">Dec 2018 - Jan 2019</span>
 
-                        <ul class="list-content list-content--mt-30">
-                            <li class="list-content__item list-content--mt-30">
+                        <ul class="list-content mt-30 p-0">
+                            <li class="list-content__item position-relative mr-1 pl-3">
                                 Developing eccommerce shop application. This is project test entry
                             </li>
 
-                            <li class="list-content__item">
+                            <li class="list-content__item position-relative mt-1 mr-1 pl-3">
                                 Work with a variety of different languages, platforms, frameworks, and content
                                 management
                                 systems such as Nodejs, MongoDB, reactjs
                             </li>
 
-                            <li class="list-content__item">
+                            <li class="list-content__item position-relative mt-1 mr-1 pl-3">
                                 Interfaced with memtor
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div id="id-pegasus" class="timeline-item">
-                    <div class="timeline-item__header">
-                        <p class="timeline-item__title">Developer</p>
-                        <a class="timeline-item__link" href="#">@ PEGASUS</a>
+                <div id="id-pegasus" class="timeline-item float-left h-100 dark-gray-txt-color">
+                    <div class="timeline-item__header timeline-item__header d-flex align-items-center fw-600">
+                        <p class="m-0 gray-txt-color">Developer</p>
+                        <a class="primary-txt-color ml-1 txt-decoration-none" href="#">@ PEGASUS</a>
                     </div>
 
-                    <div class="timeline-item__body">
-                        <span class="timeline-item__date">July - Nov 2019</span>
+                    <div class="mt-1">
+                        <span class="fs-primary ff-secondary">July - Nov 2019</span>
 
-                        <ul class="list-content list-content--mt-30">
-                            <li class="list-content__item">
+                        <ul class="list-content mt-30 p-0">
+                            <li class="list-content__item position-relative mr-1 pl-3">
                                 Developing website and web app on Nodejs for Hiep Hoa Yoga.
                             </li>
 
-                            <li class="list-content__item">
+                            <li class="list-content__item position-relative mt-1 mr-1 pl-3">
                                 Work with a variety of different languages, platforms, frameworks, and content
                                 management
                                 systems such as reactjs, nextjs, MongoDB
@@ -277,195 +312,206 @@
             </div>
         </section>
 
-        <section class="projects projects--mt-300" id="section-work">
-            <h3 class="title">
-                <div class="title__number">0.3</div>
-                <div class="title__content">Some Things I've Built</div>
-                <div class="title__line"></div>
-            </h3>
+        <section class="projects mt-primary" id="section-work">
+            <div class="title d-flex justify-content-start align-items-center">
+                <div class="title__number primary-txt-color ff-secondary">0.3</div>
+                <div class="gray-txt-color fw-600">Some Things I've Built</div>
+                <div class="title__line ml-1"></div>
+            </div>
 
-            <div class="project project--mt-60">
-                <div class="project__container">
-
+            <div class="project d-flex flex-column justify-content-center position-relative mt-secondary">
+                <div class="d-flex flex-column justify-content-center align-items-end">
                     <div class="project__title">
-                        <p class="project__feature">
+                        <p class="project__feature ff-secondary primary-txt-color">
                             Featured Project
                         </p>
-                        <h2 class="project__name">
+                        <h2 class="project__name gray-txt-color txt-align-right">
                             Ecommerce web app
                         </h2>
                     </div>
 
-                    <p class="project__content">
+                    <p
+                        class="project__content z-index-1 border-0 p-2 m-0 w-25 gray-txt-color light-dark-bg-color border-round txt-align-right">
                         A commercial web shopping application to help users easily purchase and order management and
                         administration for admin including product deletion and order management
                     </p>
 
-
-                    <ul class="list-item">
+                    <ul class="list-item pl-0 d-flex">
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">React.js</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">React.js</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">Chart.js</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">Chart.js</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">Firebase API</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">Firebase API</a>
                         </li>
                     </ul>
 
-
-                    <ul class="list-item">
+                    <ul class="list-item pl-0 d-flex">
                         <li class="list-item__item">
-                            <a class="list-item__link list-item__link--big"
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
                                 href="https://github.com/NguyenThienLy/PROJECT_INTERN_DSV" target="_blank">
                                 <i class="fab fa-sm fa-github"></i>
                             </a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link list-item__link--big"
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
                                 href="https://github.com/NguyenThienLy/PROJECT_INTERN_DSV" target="_blank">
                                 <i class="fas fa-sm fa-external-link-alt"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="project__image">
-                    <img class="project__src" src="http://picsum.photos/600" alt="" />
+                <div class="z-index-0 position-absolute d-flex w-60">
+                    <img class="project__src border-round w-100" src="http://picsum.photos/600" alt="" />
                 </div>
             </div>
 
-            <div class="project project--mt-100 project--reverse">
-                <div class="project__container">
+            <div class="project mt-100 d-flex flex-column justify-content-center position-relative">
+                <div class="d-flex flex-column justify-content-center align-items-start">
                     <div class="project__title">
-                        <p class="project__feature">
+                        <p class="project__feature ff-secondary primary-txt-color">
                             Featured Project
                         </p>
-                        <h2 class="project__name">
+                        <h2 class="project__name gray-txt-color txt-align-left">
                             Yoga website + webapp
                         </h2>
                     </div>
-                    <p class="project__content">
+                    <p
+                        class="project__content z-index-1 border-0 p-2 m-0 w-25 gray-txt-color light-dark-bg-color border-round txt-align-left">
                         Website showing news for the center to introduce timetable courses, class schedules, teachers,
                         yoga news blog, a dedicated management system for center students
                     </p>
 
-                    <ul class="list-item">
-                        <li class="list-item__item">
-                            <a class="list-item__link" href="#!">Next.js</a>
+                    <ul class="list-item pl-0 d-flex">
+                        <li class="list-item__item list-item__item--ml-0">
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">Next.js</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">typescript</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">typescript</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">React.js</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">React.js</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">Redux.js</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">Redux.js</a>
                         </li>
-                        <li class="list-item__item">
-                            <a class="list-item__link" href="#!">MongoDB</a>
+                        <li class="list-item__item ">
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">MongoDB</a>
                         </li>
                     </ul>
 
-                    <ul class="list-item">
-                        <li class="list-item__item">
-                            <a class="list-item__link list-item__link--big"
+                    <ul class="list-item pl-0 d-flex">
+                        <li class="list-item__item list-item__item--ml-0">
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
                                 href="https://github.com/NguyenThienLy/PEGASUS_SHIVOM"
                                 target="https://github.com/NguyenThienLy/PEGASUS_SHIVOM">
                                 <i class="fab fa-sm fa-github"></i>
                             </a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link list-item__link--big" href="https://hiephoayoga.com/"
-                                target="_blank">
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
+                                href="https://hiephoayoga.com/" target="_blank">
                                 <i class="fas fa-sm fa-external-link-alt"></i>
                             </a>
                         </li>
                     </ul>
 
                 </div>
-                <div class="project__image">
-                    <img class="project__src" src="http://picsum.photos/550" alt="" />
+                <div class="z-index-0 position-absolute d-flex w-60 right-0">
+                    <img class="project__src border-round w-100" src="http://picsum.photos/550" alt="" />
                 </div>
             </div>
 
-            <div class="project project--mt-100">
-                <div class="project__container">
+            <div class="project mt-100 d-flex flex-column justify-content-center position-relative">
+                <div class="d-flex flex-column justify-content-center align-items-end">
                     <div class="project__title">
-                        <p class="project__feature">
+                        <p class="project__feature ff-secondary primary-txt-color">
                             Featured Project
                         </p>
-                        <h2 class="project__name">
+                        <h2 class="project__name gray-txt-color txt-align-right">
                             Organic food web app
                         </h2>
                     </div>
-                    <p class="project__content">
+                    <p
+                        class="project__content z-index-1 border-0 p-2 m-0 w-25 gray-txt-color light-dark-bg-color border-round txt-align-right">
                         An organic food website for everyone with a friendly interface that makes it easy
                         for users to view items according to orders,
                         the system management for admin includes additional statistical products.
                     </p>
 
-                    <ul class="list-item">
+                    <ul class="list-item pl-0 d-flex">
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">Express.js</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">Express.js</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">MySql</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">MySql</a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link" href="#!">Firebase</a>
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
+                                href="#!">Firebase</a>
                         </li>
                     </ul>
 
-                    <ul class="list-item">
+                    <ul class="list-item pl-0 d-flex">
                         <li class="list-item__item">
-                            <a class="list-item__link list-item__link--big"
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
                                 href="https://github.com/NguyenThienLy/WebProject_PTUDW" target="_blank">
                                 <i class="fab fa-sm fa-github"></i>
                             </a>
                         </li>
                         <li class="list-item__item">
-                            <a class="list-item__link list-item__link--big"
+                            <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
                                 href="https://github.com/NguyenThienLy/WebProject_PTUDW" target="_blank">
                                 <i class="fas fa-sm fa-external-link-alt"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="project__image">
-                    <img class="project__src" src="http://picsum.photos/500" alt="" />
+                <div class="z-index-0 position-absolute d-flex w-60">
+                    <img class="project__src border-round w-100" src="http://picsum.photos/500" alt="" />
                 </div>
             </div>
         </section>
 
-        <section class="other-projects other-projects--mt-300">
-            <div class="other-projects__header">
-                <h1 class="other-projects__title">
-                    Other Projects
+        <section class="other-projects mt-primary">
+            <div class="mt-5 d-flex flex-column txt-align-center align-items-center">
+                <h1 class="gray-txt-color mb-0">
+                    Other Noteworthy Projects
                 </h1>
-                <p class="other-projects__detail">
+                <p class="mt-1 primary-txt-color ff-secondary">
                     view the archive
                 </p>
             </div>
 
-            <div class="other-projects__list other-projects__list--mt-50 ">
-                <div class="other-project">
-                    <div class="other-project__header">
-                        <a class="other-project__icon" title="Folder" href="#!">
+            <div class="other-projects__list mt-secondary d-grid">
+                <div class="other-project light-dark-bg-color border-round d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <a class="other-project__icon primary-txt-color" title="Folder" href="#!">
                             <i class="fas fa-folder"></i>
                         </a>
 
-                        <ul class="list-item list-item--mt-0">
+                        <ul class="list-item mt-0 pl-0 d-flex">
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fab fa-sm fa-github"></i>
                                 </a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fas fa-sm fa-external-link-alt"></i>
@@ -475,46 +521,46 @@
                     </div>
 
                     <div class="other-project__body">
-                        <h3 class="other-project__title">
+                        <h3 class="gray-txt-color">
                             Canteen management
                         </h3>
-                        <p class="other-project__content">
+                        <p class="mt-0 dark-gray-txt-color">
                             Cafeteria and food management software helps the cafeteria admin easily
                             capture food and deliver it to customers
                         </p>
                     </div>
 
-                    <div class="other-project__footer">
-                        <ul class="list-item list-item--mb-0">
-                            <li class="list-item__item list-item__item--ml-0">
-                                <a class="list-item__link" href="#!">WPF</a>
+                    <div>
+                        <ul class="list-item mb-0 pl-0 d-flex">
+                            <li class="list-item__item list-item__item--ml-0 ">
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">WPF</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">SQL Server</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">SQL Server</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">material design</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">material design</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="other-project">
-                    <div class="other-project__header">
-                        <a class="other-project__icon" title="Folder" href="#!">
+                <div class="other-project light-dark-bg-color border-round d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <a class="other-project__icon primary-txt-color" title="Folder" href="#!">
                             <i class="fas fa-folder"></i>
                         </a>
 
-                        <ul class="list-item list-item--mt-0">
+                        <ul class="list-item mt-0 pl-0 d-flex">
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fab fa-sm fa-github"></i>
                                 </a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fas fa-sm fa-external-link-alt"></i>
@@ -524,45 +570,46 @@
                     </div>
 
                     <div class="other-project__body">
-                        <h3 class="other-project__title">
+                        <h3 class="gray-txt-color">
                             Marketing management
                         </h3>
-                        <p class="other-project__content">
+                        <p class="mt-0 dark-gray-txt-color">
                             Human resource management software for marketing department, attendance, statistics, KPI
                             calculation, import file
                         </p>
                     </div>
 
-                    <div class="other-project__footer">
-                        <ul class="list-item list-item--mb-0">
+                    <div>
+                        <ul class="list-item mb-0 pl-0 d-flex">
                             <li class="list-item__item list-item__item--ml-0">
-                                <a class="list-item__link" href="#!">Winform</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Winform</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">Devexpress</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Devexpress</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">SQL server</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">SQL server</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="other-project">
-                    <div class="other-project__header">
-                        <a class="other-project__icon" title="Folder" href="#!">
+                <div class="other-project light-dark-bg-color border-round d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <a class="other-project__icon primary-txt-color" title="Folder" href="#!">
                             <i class="fas fa-folder"></i>
                         </a>
-                        <ul class="list-item list-item--mt-0">
+
+                        <ul class="list-item mt-0 pl-0 d-flex">
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fab fa-sm fa-github"></i>
                                 </a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fas fa-sm fa-external-link-alt"></i>
@@ -572,47 +619,47 @@
                     </div>
 
                     <div class="other-project__body">
-                        <h3 class="other-project__title">
+                        <h3 class="gray-txt-color">
                             POSM and BBD management
                         </h3>
 
-                        <p class="other-project__content">
+                        <p class="mt-0 dark-gray-txt-color">
                             Image management software for supermarkets and sale staff, showing pixels, importing
                             from pdf files
                         </p>
                     </div>
 
-                    <div class="other-project__footer">
-                        <ul class="list-item list-item--mb-0">
+                    <div>
+                        <ul class="list-item mb-0 pl-0 d-flex">
                             <li class="list-item__item list-item__item--ml-0">
-                                <a class="list-item__link" href="#!">Winform</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Winform</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">Devexpress</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Devexpress</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">SQL server</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">SQL server</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="other-project">
-                    <div class="other-project__header">
-                        <a class="other-project__icon" title="Folder" href="#!">
+                <div class="other-project light-dark-bg-color border-round d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <a class="other-project__icon primary-txt-color" title="Folder" href="#!">
                             <i class="fas fa-folder"></i>
                         </a>
 
-                        <ul class="list-item list-item--mt-0">
+                        <ul class="list-item mt-0 pl-0 d-flex">
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fab fa-sm fa-github"></i>
                                 </a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fas fa-sm fa-external-link-alt"></i>
@@ -622,49 +669,50 @@
                     </div>
 
                     <div class="other-project__body">
-                        <h3 class="other-project__title">
+                        <h3 class="gray-txt-color">
                             Search map home
                         </h3>
-                        <p class="other-project__content">
+                        <p class="mt-0 dark-gray-txt-color">
                             The app finds inns and check-in rooms, making it easy for
                             landlords and renters to find each other
                         </p>
                     </div>
 
-                    <div class="other-project__footer">
-                        <ul class="list-item list-item--mb-0">
+                    <div>
+                        <ul class="list-item mb-0 pl-0 d-flex">
                             <li class="list-item__item list-item__item--ml-0">
-                                <a class="list-item__link" href="#!">Android</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Android</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">Firebase</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Firebase</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">Heremap</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Heremap</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">googlemap</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">googlemap</a>
                             </li>
 
                         </ul>
                     </div>
                 </div>
 
-                <div class="other-project">
-                    <div class="other-project__header">
-                        <a class="other-project__icon" title="Folder" href="#!">
+                <div class="other-project light-dark-bg-color border-round d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                        <a class="other-project__icon primary-txt-color" title="Folder" href="#!">
                             <i class="fas fa-folder"></i>
                         </a>
-                        <ul class="list-item list-item--mt-0">
+
+                        <ul class="list-item mt-0 pl-0 d-flex">
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fab fa-sm fa-github"></i>
                                 </a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link list-item__link--medium"
+                                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
                                     href="https://github.com/NguyenThienLy/ProjectAndroid_G8" title="github"
                                     target="_blank">
                                     <i class="fas fa-sm fa-external-link-alt"></i>
@@ -674,50 +722,53 @@
                     </div>
 
                     <div class="other-project__body">
-                        <h3 class="other-project__title">
+                        <h3 class="gray-txt-color">
                             Profile profesional for Dev
                         </h3>
 
-                        <p class="other-project__content">
+                        <p class="mt-0 dark-gray-txt-color">
                             This is profile for us, it have my information and my blogs
                         </p>
                     </div>
 
-                    <div class="other-project__footer">
-                        <ul class="list-item list-item--mb-0">
+                    <div>
+                        <ul class="list-item mb-0 pl-0 d-flex">
                             <li class="list-item__item list-item__item--ml-0">
-                                <a class="list-item__link" href="#!">html,css,js</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Android</a>
                             </li>
                             <li class="list-item__item">
-                                <a class="list-item__link" href="#!">gist.github</a>
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Firebase</a>
+                            </li>
+                            <li class="list-item__item">
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Heremap</a>
+                            </li>
+                            <li class="list-item__item">
+                                <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">googlemap</a>
                             </li>
 
-                            <li class="list-item__item">
-                                <a class="list-item__link" href="#!">BEM</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="info-contact info-contact--center info-contact--mt-300" id="section-contact">
-            <span class="info-contact__header">04. What's next? </span>
-            <span class="info-contact__title info-contact__title--white">Get In Touch.</span>
-            <span class="info-contact__detail">
+        <section class="info-contact d-flex flex-column align-items-center mt-primary" id="section-contact">
+            <span class="info-contact__header ff-secondary primary-txt-color">04. What's next? </span>
+            <span class="info-contact__title fw-bold gray-txt-color">Get In Touch.</span>
+            <span class="info-contact__detail w-50 dark-gray-txt-color mt-5 txt-align-center">
                 Although I'm not currently looking for freelance
                 opportunities, my inbox is always open. Whether for a potential project or just to say hi, I'll try
                 my best to answer your messages!
             </span>
 
             <a href="https://www.facebook.com/thienly.nguyen.315" target="_blank"
-                class="info-contact__button btn btn--big btn--mb-300 btn--mt-50">Say
+                class="btn btn--big mt-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center mb-primary">Say
                 hello</a>
         </section>
     </main>
 
-    <footer class="footer">
-        <a class="footer__Link">Clone and build by Thien Ly, Huy Hoang, Tuan em</a>
+    <footer class="h-primary w-100 d-flex justify-content-center align-items-center dark-bg-color">
+        <a class="primary-txt-color d-flex justify-content-center ff-secondary">Clone and build by Thien Ly, Huy Hoang, Tuan em</a>
     </footer>
 </body>
 

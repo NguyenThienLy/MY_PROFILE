@@ -1,19 +1,5 @@
 .list-item {
   list-style-type: none;
-  padding-left: 0;
-  display: flex;
-}
-
-.list-item--flex-start {
-  justify-content: flex-start;
-}
-
-.list-item--mt-0 {
-  margin-top: 0;
-}
-
-.list-item--mb-0 {
-  margin-bottom: 0;
 }
 
 .list-item__item {
@@ -25,10 +11,7 @@
 }
 
 .list-item__link {
-  color: rgb(136, 146, 176);
-  text-decoration: none;
   font-size: 13px;
-  font-family: "Fira Code", monospace;
 }
 
 .list-item__link--big {
@@ -41,5 +24,5 @@
 
 .list-item__link:hover {
   text-decoration: underline;
-  color: rgb(100, 255, 218);
+  color: var(--primary-txt-color);
 }

@@ -1,25 +1,14 @@
 .social {
- position: fixed;
  left: 4%;
- bottom: 0;
- display: flex;
- flex-direction: column;
- align-items: center;
- z-index: 1;
 }
 
 .social__list {
     list-style-type: none;
-    padding: 0;
     line-height: 55px;
 }
 
-.social__link{
-    color: rgb(136, 146, 176);
-}
-
 .social__item:hover .social__link{
-    color: rgb(100, 255, 218);  
+    color: var(--primary-txt-color);
 }
 
 .social__item:hover {
@@ -27,9 +16,6 @@
 }
 
 .social__line {
-    border-left: 1px solid rgb(204, 214, 246);
+    border-left: 1px solid var(--dark-gray-txt-color);
     height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
 }

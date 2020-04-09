@@ -1,44 +1,12 @@
 .info-contact {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(10, 25, 47);
-}
-
-.info-contact--mt-80 {
-    margin-top: 80px;
-}
-
-.info-contact--mt-300 {
-    margin-top: 300px;
-}
-
-.info-contact--center {
-    align-items: center;
-}
-
-.info-contact__header {
-    color: rgb(10, 238, 185);
-    font-family: "Fira Code", monospace;
 }
 
 .info-contact__title {
     margin-top: 10px;
     font-size: 70px;
-    font-weight: bold;
-}
-
-.info-contact__title--grey {
-    color: rgb(136, 146, 176);
-}
-
-.info-contact__title--white {
-    color: rgb(204, 214, 246);
 }
 
 .info-contact__detail {
-    width: 50%;
-    margin-top: 50px;
-    color: rgb(136, 146, 176);
     line-height: 1.3;
     font-size: 17px;
 }

@@ -1,0 +1,200 @@
+:root {
+  --spacing--0: 0;
+  --spacing--1: 10px;
+  --spacing--2: 20px;
+  --spacing--3: 30px;
+  --spacing--4: 40px;
+  --spacing--5: 50px;
+}
+
+.m-0 {
+  margin: var(--spacing--0);
+}
+
+.m-1 {
+  margin: var(--spacing--1);
+}
+
+.m-2 {
+  margin: var(--spacing--2);
+}
+
+.m-3 {
+  margin: var(--spacing--3);
+}
+
+.m-4 {
+  margin: var(--spacing--4);
+}
+
+.m-5 {
+  margin: var(--spacing--5);
+}
+
+.mt-0 {
+  margin-top: var(--spacing--0);
+}
+
+.mt-1 {
+  margin-top: var(--spacing--1);
+}
+
+.mt-2 {
+  margin-top: var(--spacing--2);
+}
+
+.mt-3 {
+  margin-top: var(--spacing--3);
+}
+
+.mt-4 {
+  margin-top: var(--spacing--4);
+}
+
+.mt-5 {
+  margin-top: var(--spacing--5);
+}
+
+.mt-primary {
+  margin-top: 300px;
+}
+
+.mt-secondary {
+  margin-top: 60px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-30 {
+  margin-top: 30px;;
+}
+
+.mb-0 {
+  margin-bottom: var(--spacing--0);
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing--1);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing--2);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing--3);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing--4);
+}
+
+.mb-5 {
+  margin-bottom: var(--spacing--5);
+}
+
+.mb-primary {
+  margin-bottom: 300px;
+}
+
+.ml-0 {
+  margin-left: var(--spacing--0);
+}
+
+.ml-1 {
+  margin-left: var(--spacing--1);
+}
+
+.ml-2 {
+  margin-left: var(--spacing--2);
+}
+
+.ml-3 {
+  margin-left: var(--spacing--3);
+}
+
+.ml-4 {
+  margin-left: var(--spacing--4);
+}
+
+.ml-5 {
+  margin-left: var(--spacing--5);
+}
+
+.ml-7 {
+  margin-left: 7px;
+}
+
+.mr-0 {
+  margin-right: var(--spacing--0);
+}
+
+.mr-1 {
+  margin-right: var(--spacing--1);
+}
+
+.mr-2 {
+  margin-right: var(--spacing--2);
+}
+
+.mr-3 {
+  margin-right: var(--spacing--3);
+}
+
+.mr-4 {
+  margin-right: var(--spacing--4);
+}
+
+.mr-5 {
+  margin-right: var(--spacing--5);
+}
+
+.p-0 {
+  padding: var(--spacing--0);
+}
+
+.p-1 {
+  padding: var(--spacing--1);
+}
+
+.p-2 {
+  padding: var(--spacing--2);
+}
+
+.p-3 {
+  padding: var(--spacing--3);
+}
+
+.p-4 {
+  padding: var(--spacing--4);
+}
+
+.p-5 {
+  padding:  var(--spacing--5);
+}
+
+.pl-0 {
+  padding-left: var(--spacing--0);
+}
+
+.pl-1 {
+  padding-left: var(--spacing--1);
+}
+
+.pl-2 {
+  padding-left: var(--spacing--2);
+}
+
+.pl-3 {
+  padding-left: var(--spacing--3);
+}
+
+.pl-4 {
+  padding-left: var(--spacing--4);
+}
+
+.pl-5 {
+  padding-left: var(--spacing--5);
+}

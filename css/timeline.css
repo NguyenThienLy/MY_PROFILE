@@ -1,9 +1,4 @@
-.timeline--mt-60 {
-  margin-top: 60px;
-}
-
 .timeline__tab {
-  float: left;
   background-color: transparent;
   width: 20%;
   height: 300px;
@@ -11,33 +6,24 @@
 
 .timeline__btn{
   background-color: inherit;
-  border: none;
-  color: rgb(141, 152, 181);
   outline: none;
-  border-left: 2px solid rgb(141, 152, 181);
+  border-left: 2px solid;
   padding: 10px 16px;
-  cursor: pointer;
-  width: 100%;
   font-size: 13px;
   opacity: 0.6;
-  text-align: left;
-  font-family: 'Fira Code', monospace;
 }
 
 .timeline__btn:hover {
-  background-color: 	rgb(21, 35, 56);
-  color:rgb(92, 234, 202);
+  background-color: var(--medium-dark-bg-color);
+  color: var(--primary-txt-color);
   padding-right: 100px;
   opacity: 1;
 }
 
-.timeline__btn.active {
-  background-color: rgb(21, 35, 56);
-  color:rgb(92, 234, 202);
+.timeline__btn--active {
+  background-color: var(--medium-dark-bg-color);
+  color: var(--primary-txt-color);
   opacity: 1;
-  padding-right: 100px;
-  font-family: 'Fira Code', monospace;
-  border-left: 2px solid rgb(92, 234, 202);
 }
 
 
