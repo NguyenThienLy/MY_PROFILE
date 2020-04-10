@@ -3,14 +3,6 @@
   position: relative;
 }
 
-.project__feature {
-  font-size: 15px;
-}
-
-.project__name {
-  font-size: 27px;
-}
-
 .project__content {
   width: 45%;
 }

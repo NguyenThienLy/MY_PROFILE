@@ -1,5 +1,5 @@
 .header {
-    padding: 0 50px;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -22,5 +22,5 @@
 }
 
 .header__link:hover{
-    color: var(--primary-txt-color);
+    color: var(--primary-color);
 }

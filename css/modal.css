@@ -1,0 +1,67 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  border: 2px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.modal__header {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+}
+
+.modal__header__content {
+  font-family: 'Fira Code', monospace;
+}
+
+.modal__header__close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+.modal__header__close:hover,
+.modal__header__close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 70%;
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+.modal__content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+}
+
+.modal__content::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f5f5f5;
+}
+
+.modal__content::-webkit-scrollbar-thumb {
+  background-color: rgb(10, 238, 185);
+}

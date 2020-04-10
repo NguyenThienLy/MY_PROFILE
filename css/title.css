@@ -8,7 +8,7 @@
 }
 
 .title__line {
-  border-top: 0.5px solid var(--gray-txt-color);
+  border-top: 0.5px solid var(--gray-color);
   width: 300px;
   height: 0.5px;
 }

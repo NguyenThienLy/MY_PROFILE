@@ -1,5 +1,5 @@
 .social {
- left: 4%;
+    width: 10%;
 }
 
 .social__list {
@@ -7,15 +7,15 @@
     line-height: 55px;
 }
 
-.social__item:hover .social__link{
-    color: var(--primary-txt-color);
+.social__item:hover .social__link {
+    color: var(--primary-color);
 }
 
 .social__item:hover {
-    transform: translateY(-3px);   
+    transform: translateY(-3px);
 }
 
 .social__line {
-    border-left: 1px solid var(--dark-gray-txt-color);
+    border-left: 1px solid var(--dark-gray-color);
     height: 100px;
 }

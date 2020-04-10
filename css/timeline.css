@@ -14,15 +14,14 @@
 }
 
 .timeline__btn:hover {
-  background-color: var(--medium-dark-bg-color);
-  color: var(--primary-txt-color);
-  padding-right: 100px;
+  background-color: var(--medium-dark-color);
+  color: var(--primary-color);
   opacity: 1;
 }
 
 .timeline__btn--active {
-  background-color: var(--medium-dark-bg-color);
-  color: var(--primary-txt-color);
+  background-color: var(--medium-dark-color);
+  color: var(--primary-color);
   opacity: 1;
 }
 

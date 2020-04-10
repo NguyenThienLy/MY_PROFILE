@@ -12,7 +12,7 @@
     width: 300px;
     right: -4%;
     top: 5%;
-    border: 1px solid var(--primary-txt-color);
+    border: 1px solid var(--primary-color);
 }
 
 .avatar__container:hover  + .avatar__border {

@@ -1,5 +1,6 @@
 .email {
-    right: -5%;
+    right: 0;
+    width: 10%;
 }
 
 .email__content {
@@ -7,10 +8,10 @@
 }
 
 .email__content:hover {
-    color: var(--primary-txt-color);
+    color: var(--primary-color);
 }
 
 .email__line {
-    border-left: 1px solid var(--dark-gray-txt-color);
+    border-left: 1px solid var(--dark-gray-color);
     height: 100px;
 }

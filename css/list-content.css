@@ -17,7 +17,7 @@
     position: absolute;
     left: 0px;
     top: 15%;
-    color: var(--primary-txt-color);
+    color: var(--primary-color);
     font-size: 14px;
     line-height: 12px;
 }

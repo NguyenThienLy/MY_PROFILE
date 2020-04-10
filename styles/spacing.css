@@ -198,3 +198,7 @@
 .pl-5 {
   padding-left: var(--spacing--5);
 }
+
+.plr-primary {
+  padding: 0 20%;
+}
