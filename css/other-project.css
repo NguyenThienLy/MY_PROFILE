@@ -1,6 +1,7 @@
 .other-project {
-  height: 300px;
+  height: 350px;
   padding: 30px 20px;
+  box-sizing: border-box;
 }
 
 .other-project:hover {

@@ -1,8 +1,0 @@
-.other-projects {
-
-}
-
-.other-projects__list {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px 20px
-}

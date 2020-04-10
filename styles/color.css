@@ -6,6 +6,7 @@
   --dark-color: #020c1b;
   --dark-green-color:#145c4b;
   --gray-color: #ccd6f6;
+  --light-color: #fefefe;
   --dark-gray-color: #8892b0;
 }
 
@@ -23,6 +24,10 @@
 
 .dark-bg-color {
   background-color: var(--dark-color);
+}
+
+.light-bg-color {
+  background-color: var(--light-color);
 }
 
 .medium-dark-bg-color {
@@ -43,6 +48,10 @@
 
 .dark-gray-txt-color {
   color: var(--dark-gray-color);
+}
+
+.dark-txt-color {
+  color: var(--dark-color);
 }
 
 .dark-gray-bd-color {

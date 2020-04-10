@@ -9,3 +9,7 @@
 .grid-gap-2 {
   grid-gap: 20px;
 }
+
+.grid-gap-1 {
+  grid-gap: 10px;
+}

@@ -1,7 +1,14 @@
 .post {
   padding: 30px 20px;
+  box-sizing: border-box;
+  height: 250px;
 }
 
-.post__date {
-  font-size: 13px;
+.post__body {
+  flex-grow: 2
 }
+
+.post:hover {
+  transform: translateY(-5px);   
+}
+

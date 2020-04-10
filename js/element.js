@@ -1,4 +1,6 @@
+let headerPage = document.getElementsByClassName("header")[0];
+
 let modal = document.getElementById("myModal");
-let span = document.getElementsByClassName("modal__header__close")[0];
+let modalClose = document.getElementById("modalClose");
 let modalHeader = document.getElementById("modalHeader");
 let modalContent = document.getElementById("modalContent");
