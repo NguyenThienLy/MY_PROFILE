@@ -1,4 +1,4 @@
-let openModal = (_id) => {
+let openModalGist = (_id) => {
 
   let index = gists.findIndex(e => e._id === _id)
 
@@ -11,32 +11,32 @@ let openModal = (_id) => {
       type: 'GET',
       dataType: 'jsonp',
       success: (gistdata) => {
-        modalContent.innerHTML = gistdata.div;
+        modalGistContent.innerHTML = gistdata.div;
       },
       error: (err) => {
-        modalContent.innerHTML = "Can't not load data from gist";
+        modalGistContent.innerHTML = "Can't not load data from gist";
       }
     });
 
-    modalHeader.innerHTML = gist.title;
+    modalGistHeader.innerHTML = gist.title;
     headerPage.style.display = "none";
 
-    modal.style.display = "block";
+    modalGist.style.display = "block";
   }
 }
 
-modalClose.onclick = () => {
-  modalContent.scrollTop = 0;
-  modal.style.display = "none";
+modalGistClose.onclick = () => {
+  modalGistContent.scrollTop = 0;
+  modalGist.style.display = "none";
+  modalGistContent.innerHTML = '';
   headerPage.style.display = "flex";
-  modalContent.innerHTML = '';
 }
 
 window.onclick = (event) => {
-  if (event.target == modal) {
-    modalContent.scrollTop = 0;
-    modal.style.display = "none";
+  if (event.target == modalGist) {
+    modalGistContent.scrollTop = 0;
+    modalGist.style.display = "none";
+    modalGistContent.innerHTML = '';
     headerPage.style.display = "flex";
-    modalContent.innerHTML = '';
   }
 }

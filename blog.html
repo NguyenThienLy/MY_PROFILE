@@ -22,23 +22,16 @@
   <link rel="stylesheet" href="./css/button.css">
   <link rel="stylesheet" href="./css/list-content.css" />
   <link rel="stylesheet" href="./css/list-item.css" />
-  <link rel="stylesheet" href="./css/avatar.css" />
   <link rel="stylesheet" href="./css/social.css" />
-  <link rel="stylesheet" href="./css/project.css" />
   <link rel="stylesheet" href="./css/title.css" />
-  <link rel="stylesheet" href="./css/other-project.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/email.css" />
-  <link rel="stylesheet" href="./css/timeline.css" />
-  <link rel="stylesheet" href="./css/timeline-item.css" />
   <link rel="stylesheet" href="./css/modal.css" />
   <link rel="stylesheet" href="./css/post.css" />
 
   <link rel="stylesheet" href="./css/container/header.css">
-  <link rel="stylesheet" href="./css/container/about-me.css" />
-  <link rel="stylesheet" href="./css/container/body-index.css" />
+  <link rel="stylesheet" href="./css/container/body-page.css" />
   <link rel="stylesheet" href="./css/container/info-contact.css">
-  <link rel="stylesheet" href="./css/container/experience.css">
 
   <link rel="stylesheet" href="./css/page/index.css" />
 
@@ -54,7 +47,7 @@
 </head>
 
 <body class="m-0 secondary-bg-color ff-primary">
-  <header
+  <header id="header-page"
     class="header d-flex align-items-center top-0 left-50 z-index-2 position-sticky w-100 h-primary light-dark-bg-color">
     <a class="header-link" href="./">
       <img class="header__logo"
@@ -63,16 +56,16 @@
 
     <ol class="header__list ml-2 d-flex justify-content-end ff-secondary">
       <li class="header__item primary-txt-color">01.<a class="header__link ml-7 gray-txt-color txt-decoration-none"
-          href="#section-technical-note">Technical note</a>
+          onclick="onSetScrollTop(800)">Technical note</a>
       </li>
       <li class="header__item primary-txt-color">02.<a class="header__link ml-7 gray-txt-color txt-decoration-none"
-          href="#section-my-series">My series</a>
+        onclick="onSetScrollTop(1650)">My story</a>
       </li>
       <li class="header__item primary-txt-color">03.<a class="header__link ml-7 gray-txt-color txt-decoration-none"
-          href="#section-my-story">My story</a>
+        onclick="onSetScrollTop(2600)">My series</a>
       </li>
       <li class="header__item primary-txt-color">04.<a class="header__link ml-7 gray-txt-color txt-decoration-none"
-          href="#section-contact">Contact</a>
+        onclick="onSetScrollTop(3200)">Contact</a>
       </li>
     </ol>
 
@@ -120,7 +113,7 @@
     <div class="email__line top-0 left-50 transform-translate-X--50"></div>
   </section>
 
-  <main class="body-index position-relative">
+  <main class="body-page position-relative">
     <section class="info-contact mt-secondary d-flex flex-column">
       <span class="info-contact__header ff-secondary primary-txt-color">Hi, my name is</span>
       <span class="info-contact__title fw-bold gray-txt-color">Nguyen Thien Ly</span>
@@ -138,299 +131,37 @@
       </a>
     </section>
 
-    <section class="mt-primary d-block" id="section-technical-note">
+    <section class="mt-primary d-block" id="section-technical-notes">
       <div class="title d-flex justify-content-start align-items-center ">
         <div class="title__number primary-txt-color ff-secondary">0.1</div>
         <div class="gray-txt-color fw-600">Technical note</div>
         <div class="title__line ml-1"></div>
       </div>
 
-      <div class="mt-secondary d-grid grid-col-2 grid-gap-1">
-
-        <div class="post m-1 light-dark-bg-color border-round d-flex flex-column">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="txt-decoration-none primary-txt-color ff-secondary fs-primary">
-              <i class="far fa-calendar-alt"></i>
-              01/04/2020
-            </div>
-
-            <ul class="list-item mt-0 mb-0 pl-0 d-flex">
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://gist.github.com/84a19dd44ae1b0290a4fbeabbe2e0824.git" title="github" target="_blank">
-                  <i class="fab fa-sm fa-github"></i>
-                </a>
-              </li>
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://dev.to/nguyenthienly/unit-test-in-typescript-by-jest-hb0" title="devto"
-                  target="_blank">
-                  <i class="fab fa-sm fa-dev"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="post__body">
-            <h3 class="gray-txt-color fs-20">
-              Unit test in typescript by jest
-              <a class="btn btn--small ml-2 txt-decoration-none primary-txt-color cursor-pointer ff-secondary border-round txt-align-center primary-bd-color"
-                onclick="openModal('84a19dd44ae1b0290a4fbeabbe2e0824')">view
-                now !</a>
-            </h3>
-            <p class="mt-0 dark-gray-txt-color fs-secondary">
-              Xin chào tất cả mọi người, làm developer thì ai cũng phải viết unit test
-              (Định nghĩa phần 2) phải không nào...
-            </p>
-          </div>
-
-          <ul class="list-item mb-0 pl-0 d-flex">
-            <li class="list-item__item list-item__item--ml-0 ">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Nodejs</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Javascript</a>
-            </li>
-
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Jest</a>
-            </li>
-
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Unit test</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="post m-1 light-dark-bg-color border-round d-flex flex-column">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="txt-decoration-none primary-txt-color ff-secondary fs-primary">
-              <i class="far fa-calendar-alt"></i>
-              30/03/2020
-            </div>
-
-            <ul class="list-item mt-0 mb-0 pl-0 d-flex">
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://gist.github.com/56b9526b4ab60f55ab73dc848ce17041.git" title="github" target="_blank">
-                  <i class="fab fa-sm fa-github"></i>
-                </a>
-              </li>
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://dev.to/nguyenthienly/intergrate-jade-into-typescript-expressjs-281l" title="devto"
-                  target="_blank">
-                  <i class="fab fa-sm fa-dev"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="post__body">
-            <h3 class="gray-txt-color fs-20">
-              Intergrate jade into typescript ...
-              <a class="btn btn--small ml-2 txt-decoration-none cursor-pointer primary-txt-color ff-secondary border-round txt-align-center primary-bd-color"
-                onclick="openModal('56b9526b4ab60f55ab73dc848ce17041')">view
-                now !</a>
-            </h3>
-            <p class="mt-0 dark-gray-txt-color fs-secondary">
-              Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế
-              require một package hay một module đã có để sử dụng.
-            </p>
-          </div>
-
-          <ul class="list-item mb-0 pl-0 d-flex">
-            <li class="list-item__item list-item__item--ml-0 ">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Nodejs</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Javascript</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Jade</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Typescript</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="post m-1 light-dark-bg-color border-round d-flex flex-column">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="txt-decoration-none primary-txt-color ff-secondary fs-primary">
-              <i class="far fa-calendar-alt"></i>
-              29/03/2020
-            </div>
-
-            <ul class="list-item mt-0 mb-0 pl-0 d-flex">
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://gist.github.com/eb6d3ba19738a717cd8201aed273199a.git" title="github" target="_blank">
-                  <i class="fab fa-sm fa-github"></i>
-                </a>
-              </li>
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://dev.to/nguyenthienly/import-vs-require-3kmn" title="devto" target="_blank">
-                  <i class="fab fa-sm fa-dev"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="post__body">
-            <h3 class="gray-txt-color fs-20">
-              Import vs require
-              <a class="btn btn--small ml-2 txt-decoration-none cursor-pointer primary-txt-color ff-secondary border-round txt-align-center primary-bd-color"
-                onclick="openModal('eb6d3ba19738a717cd8201aed273199a')">view
-                now !</a>
-            </h3>
-            <p class="mt-0 dark-gray-txt-color fs-secondary">
-              Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế
-              require một package hay một module đã có để sử dụng.
-            </p>
-          </div>
-
-          <ul class="list-item mb-0 pl-0 d-flex">
-            <li class="list-item__item list-item__item--ml-0 ">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Nodejs</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">Javascript</a>
-            </li>
-          </ul>
-        </div>
+      <div class="mt-secondary d-grid grid-col-2 grid-gap-2" id="container-technical-notes-item">
       </div>
     </section>
 
-    <section class="mt-primary d-flex flex-column plr-primary" id="section-my-series">
+    <section class="mt-primary d-flex flex-column plr-primary" id="section-my-story">
       <div class="title d-flex justify-content-start align-items-center">
         <div class="title__number primary-txt-color ff-secondary">0.2</div>
+        <div class="gray-txt-color fw-600">My story</div>
+        <div class="title__line ml-1"></div>
+      </div>
+
+      <div class="mt-secondary" id="container-my-stories-item">
+      </div>
+    </section>
+
+    <section class="mt-primary" id="section-my-series">
+      <div class="title d-flex justify-content-start align-items-center">
+        <div class="title__number primary-txt-color ff-secondary">0.3</div>
         <div class="gray-txt-color fw-600">My series</div>
         <div class="title__line ml-1"></div>
       </div>
 
-      <div class="mt-secondary">
-
-        <div class="post light-dark-bg-color border-round d-flex flex-column">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="txt-decoration-none primary-txt-color ff-secondary fs-primary">
-              <i class="far fa-calendar-alt"></i>
-              02/04/2020
-            </div>
-
-            <ul class="list-item mt-0 mb-0 pl-0 d-flex">
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://gist.github.com/4939a7abd67ea114c21b73ac30348b84.git" title="github" target="_blank">
-                  <i class="fab fa-sm fa-github"></i>
-                </a>
-              </li>
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://dev.to/nguyenthienly/create-cv-with-bem-4io1" title="devto"
-                  target="_blank">
-                  <i class="fab fa-sm fa-dev"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="post__body">
-            <h3 class="gray-txt-color fs-20">
-              Create CV with BEM - 1
-              <a class="btn btn--small ml-2 txt-decoration-none primary-txt-color cursor-pointer ff-secondary border-round txt-align-center primary-bd-color"
-                onclick="openModal('4939a7abd67ea114c21b73ac30348b84')">view
-                now !</a>
-            </h3>
-            <p class="mt-0 dark-gray-txt-color fs-secondary">
-              Xin chào tất cả mọi người, trước đây khi mà mình đi xin việc thì đến giai đoạn nộp CV, 
-              thì mình hay lên topcv.vn hay là ...
-            </p>
-          </div>
-
-          <ul class="list-item mb-0 pl-0 d-flex">
-            <li class="list-item__item list-item__item--ml-0 ">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">html</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">css</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">js</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">BEM</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">gist</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="post mt-2 light-dark-bg-color border-round d-flex flex-column">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="txt-decoration-none primary-txt-color ff-secondary fs-primary">
-              <i class="far fa-calendar-alt"></i>
-              02/04/2020
-            </div>
-
-            <ul class="list-item mt-0 mb-0 pl-0 d-flex">
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://gist.github.com/719f202047c56e7748de5c9eed868cfe.git" title="github" target="_blank">
-                  <i class="fab fa-sm fa-github"></i>
-                </a>
-              </li>
-              <li class="list-item__item">
-                <a class="list-item__link list-item__link--medium txt-decoration-none dark-gray-txt-color"
-                  href="https://dev.to/nguyenthienly/create-cv-with-bem-2-29m7" title="devto"
-                  target="_blank">
-                  <i class="fab fa-sm fa-dev"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="post__body">
-            <h3 class="gray-txt-color fs-20">
-              Create CV with BEM - 2
-              <a class="btn btn--small ml-2 txt-decoration-none primary-txt-color cursor-pointer ff-secondary border-round txt-align-center primary-bd-color"
-                onclick="openModal('719f202047c56e7748de5c9eed868cfe')">view
-                now !</a>
-            </h3>
-            <p class="mt-0 dark-gray-txt-color fs-secondary">
-              Thông thường thì mọi người code html, csss, mỗi khi thêm một ít
-              code mới lại refresh khá mất thời gian vì vậy mình sẽ giới thiệu một extension ...
-            </p>
-          </div>
-
-          <ul class="list-item mb-0 pl-0 d-flex">
-            <li class="list-item__item list-item__item--ml-0 ">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">html</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">css</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">js</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">BEM</a>
-            </li>
-            <li class="list-item__item">
-              <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary" href="#!">gist</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-primary" id="section-my-story">
-      <div class="title d-flex justify-content-start align-items-center">
-        <div class="title__number primary-txt-color ff-secondary">0.3</div>
-        <div class="gray-txt-color fw-600">My story</div>
-        <div class="title__line ml-1"></div>
+      <div class="mt-secondary d-grid grid-col-2 grid-gap-2" id="container-my-series-1-item">
+    
       </div>
     </section>
 
@@ -453,14 +184,14 @@
     <a class="primary-txt-color d-flex justify-content-center ff-secondary">Clone and build by Nguyen Thien Ly</a>
   </footer>
 
-  <div id="myModal" class="modal d-none position-fixed z-index-3 top-0 left-0 w-100 h-100 secondary-bg-color pt-5">
+  <div id="modal-gist" class="modal d-none position-fixed z-index-3 top-0 left-0 w-100 h-100 secondary-bg-color pt-5">
     <div class="modal__header w-75 light-bg-color p-2 dark-gray-bd-color position-relative">
-      <span class="modal__header__content ff-secondary" id="modalHeader">View location</span>
-      <span id="modalClose"
+      <span class="modal__header__content ff-secondary" id="modal-gist-header">View location</span>
+      <span id="modal-gist-close"
         class="modal__header__close gray-txt-color float-right fs-20 fw-bold position-sticky top-0">&times;</span>
     </div>
 
-    <div class="modal__content w-75 light-bg-color p-2 dark-gray-bd-color" id="modalContent">
+    <div class="modal__content w-75 light-bg-color p-2 dark-gray-bd-color" id="modal-gist-content">
 
     </div>
   </div>
@@ -469,6 +200,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="./js/element.js"></script>
 <script src="./js/varibles.js"></script>
+<script src="./js/helpers.js"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/renderBlogs.js"></script>
+<script src="./js/page/blog.js"></script>
 
 </html>
