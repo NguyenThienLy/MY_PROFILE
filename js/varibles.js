@@ -30,6 +30,11 @@ let gists = [
     author: 'NguyenThienLy',
     title: 'Create CV with BEM - 2'
   },
+  {
+    _id: '2dca16a4ea0ef6c2303f196fd7808c6b',
+    author: 'NguyenThienLy',
+    title: 'What is closure?'
+  },
 ];
 
 let projects = [
@@ -191,7 +196,7 @@ let otherProjects = [
 
 let technicalNotes = [
   {
-    _id: '84a19dd44ae1b0290a4fbeabbe2e0824',
+    _id: '2dca16a4ea0ef6c2303f196fd7808c6b',
     name: 'What is closure?',
     date: '10/04/2020',
     description: `Xin chào tất cả mọi người, mọi người có biết closures à gì không?
