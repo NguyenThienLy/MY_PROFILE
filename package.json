@@ -1,5 +1,5 @@
 {
-  "name": "my_profile",
+  "name": "profile_for_dev",
   "version": "1.0.0",
   "description": "This is profesional profile for dev",
   "main": "main.js",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/NguyenThienLy/MY_PROFILE/issues"
   },
-  "homepage": "https://github.com/NguyenThienLy/MY_PROFILE#readme"
+  "homepage": "https://github.com/NguyenThienLy/MY_PROFILE#readme",
+  "devDependencies": {
+    "copyfiles": "^2.2.0"
+  }
 }

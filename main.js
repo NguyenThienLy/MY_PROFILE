@@ -1,43 +1,34 @@
+
 const path = require('path');
-const fs = require('fs');
+const {
+  readFilePromise,
+  writeFilePromise,
+} = require('./services/file');
 
-const readFilePromise = (path) => {
-  return new Promise((resolve, reject) => {
-    if (fs.existsSync(path)) {
-      fs.readFile(path, 'utf8', (err, res) => {
-        if (err) return reject(err);
-        resolve(res);
-      })
-    }
-    else {
-      fs.appendFile(path, '[]', (err) => {
-        if (err) return reject(err);
-        resolve('[]');
-      })
-    }
-  });
-}
+const insertProject = async (project) => {
+  const projects = JSON.parse(await readFilePromise(path.join(__dirname, './docs/data/projects.json')));
 
-const writeFilePromise = (path, data) => {
-  return new Promise((resolve, reject) => {
-    if (fs.existsSync(path)) {
-      fs.writeFile(path, data, function (err) {
-        if (err) return reject(err)
-        resolve('done');
-      });
-    }
-    else {
-      fs.appendFile(path, data, (err) => {
-        if (err) return reject(err);
-        resolve('done');
-      })
-    }
-  });
-}
+  projects.push(project);
+
+  writeFilePromise('./docs/data/projects.json', JSON.stringify(projects)).then(res => {
+    return project;
+  }).catch(err => {
+    throw Error("insert fail!");
+  })
+};
+
+const insertOtherProject = async (otherProject) => {
+  const otherProjects = JSON.parse(await readFilePromise(path.join(__dirname, './docs/data/otherProjects.json')));
+  otherProjects.push(otherProject);
+
+  writeFilePromise('./docs/data/projects.json', JSON.stringify(otherProjects)).then(res => {
+    return otherProject;
+  }).catch(err => {
+    throw Error("insert fail!");
+  })
+};
 
 module.exports = {
-  readFileProjects: readFilePromise('./data/projects.json'),
-  readFileOtherProjects: readFilePromise('./data/otherProjects.json'),
-  writeFileProjects: writeFilePromise('./data/projects.json'),
-  writeFileOtherProjects: writeFilePromise('./data/otherProjects.json')
+  insertProject,
+  insertOtherProject
 }
