@@ -1,1 +1,115 @@
-[{"_id":"0","img":"http://picsum.photos/550","name":"Ecommerce web app","description":" A commercial web shopping application to help users easily purchase and order management and administration for admin including product deletion and order management.","note":"This project has brought me lots of useful knowledge","topics":[{"name":"React.js","title":"React.js","link":"#"},{"name":"Chart.js","title":"Chart.js","link":"#"},{"name":"Firebase API","title":"Firebase API","link":"#"}],"repos":[{"title":"github","link":"https://github.com/NguyenThienLy/PROJECT_INTERN_DSV","icon":"fab fa-sm fa-github"}]},{"_id":"1","img":"http://picsum.photos/600","name":"Yoga website + webapp","description":"Website showing news for the center to introduce timetable courses, class schedules, teachers, yoga news blog, a dedicated management system for center students.","note":"This is first startup project that my team built","topics":[{"name":"Next.js","title":"Next.js","link":"#"},{"name":"typescript","title":"typescript","link":"#"},{"name":"React.js","title":"React.js","link":"#"},{"name":"Redux.js","title":"Redux.js","link":"#"},{"name":"MongoDB","title":"MongoDB","link":"#"}],"repos":[{"title":"github","link":"https://github.com/NguyenThienLy/PEGASUS_SHIVOM","icon":"fab fa-sm fa-github"},{"title":"website","link":"https://hiephoayoga.com","icon":"fas fa-sm fa-external-link-alt"}]},{"_id":"2","img":"http://picsum.photos/650","name":"Organic food web app","description":"   An organic food website for everyone with a friendly interface that makes it easy for users to view items according to orders, the system management for admin includes additional statistical products.","note":"This is first project about web that my team built","topics":[{"name":"Express.js","title":"Express.js","link":"#"},{"name":"MySql","title":"MySql","link":"#"},{"name":"Firebase","title":"Firebase","link":"#"}],"repos":[{"title":"github","link":"https://github.com/NguyenThienLy/WebProject_PTUDW","icon":"fab fa-sm fa-github"},{"title":"youtube","link":"https://www.youtube.com/watch?v=dkMCSs4bPEM&feature=youtu.be&fbclid=IwAR0-z1Gm6nbUB-rab0cd3vK86DnCVTCq6o7AUusa5bk5jEUev_6StoEuIns","icon":"fab fa-sm fa-youtube"}]},{"_id":"3","img":"http://picsum.photos/550","name":"Ecommerce web app","description":" A commercial web shopping application to help users easily purchase and order management and\n      administration for admin including product deletion and order management.","note":"This project has brought me lots of useful knowledge","topics":[{"name":"React.js","title":"React.js","link":"#"},{"name":"Chart.js","title":"Chart.js","link":"#"},{"name":"Firebase API","title":"Firebase API","link":"#"}],"repos":[{"title":"github","link":"https://github.com/NguyenThienLy/PROJECT_INTERN_DSV","icon":"fab fa-sm fa-github"}]},{"_id":"5","img":"http://picsum.photos/550","name":"Ecommerce web app","description":" A commercial web shopping application to help users easily purchase and order management and\n      administration for admin including product deletion and order management.","note":"This project has brought me lots of useful knowledge","topics":[{"name":"React.js","title":"React.js","link":"#"},{"name":"Chart.js","title":"Chart.js","link":"#"},{"name":"Firebase API","title":"Firebase API","link":"#"}],"repos":[{"title":"github","link":"https://github.com/NguyenThienLy/PROJECT_INTERN_DSV","icon":"fab fa-sm fa-github"}]}]
+[
+  {
+    "_id": "0",
+    "img": "http://picsum.photos/550",
+    "name": "Ecommerce web app",
+    "description": " A commercial web shopping application to help users easily purchase and order management and administration for admin including product deletion and order management.",
+    "note": "This project has brought me lots of useful knowledge",
+    "topics": [
+      {
+        "name": "React.js",
+        "title": "React.js",
+        "link": "#"
+      },
+      {
+        "name": "Chart.js",
+        "title": "Chart.js",
+        "link": "#"
+      },
+      {
+        "name": "Firebase API",
+        "title": "Firebase API",
+        "link": "#"
+      }
+    ],
+    "repos": [
+      {
+        "title": "github",
+        "link": "https://github.com/NguyenThienLy/PROJECT_INTERN_DSV",
+        "icon": "fab fa-sm fa-github"
+      }
+    ]
+  },
+  {
+    "_id": "1",
+    "img": "http://picsum.photos/600",
+    "name": "Yoga website + webapp",
+    "description": "Website showing news for the center to introduce timetable courses, class schedules, teachers, yoga news blog, a dedicated management system for center students.",
+    "note": "This is first startup project that my team built",
+    "topics": [
+      {
+        "name": "Next.js",
+        "title": "Next.js",
+        "link": "#"
+      },
+      {
+        "name": "typescript",
+        "title": "typescript",
+        "link": "#"
+      },
+      {
+        "name": "React.js",
+        "title": "React.js",
+        "link": "#"
+      },
+      {
+        "name": "Redux.js",
+        "title": "Redux.js",
+        "link": "#"
+      },
+      {
+        "name": "MongoDB",
+        "title": "MongoDB",
+        "link": "#"
+      }
+    ],
+    "repos": [
+      {
+        "title": "github",
+        "link": "https://github.com/NguyenThienLy/PEGASUS_SHIVOM",
+        "icon": "fab fa-sm fa-github"
+      },
+      {
+        "title": "website",
+        "link": "https://hiephoayoga.com",
+        "icon": "fas fa-sm fa-external-link-alt"
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "img": "http://picsum.photos/650",
+    "name": "Organic food web app",
+    "description": "   An organic food website for everyone with a friendly interface that makes it easy for users to view items according to orders, the system management for admin includes additional statistical products.",
+    "note": "This is first project about web that my team built",
+    "topics": [
+      {
+        "name": "Express.js",
+        "title": "Express.js",
+        "link": "#"
+      },
+      {
+        "name": "MySql",
+        "title": "MySql",
+        "link": "#"
+      },
+      {
+        "name": "Firebase",
+        "title": "Firebase",
+        "link": "#"
+      }
+    ],
+    "repos": [
+      {
+        "title": "github",
+        "link": "https://github.com/NguyenThienLy/WebProject_PTUDW",
+        "icon": "fab fa-sm fa-github"
+      },
+      {
+        "title": "youtube",
+        "link": "https://www.youtube.com/watch?v=dkMCSs4bPEM&feature=youtu.be&fbclid=IwAR0-z1Gm6nbUB-rab0cd3vK86DnCVTCq6o7AUusa5bk5jEUev_6StoEuIns",
+        "icon": "fab fa-sm fa-youtube"
+      }
+    ]
+  }
+]
