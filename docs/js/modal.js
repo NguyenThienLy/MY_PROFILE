@@ -1,6 +1,6 @@
 let openModalGist = (_id) => {
 
-  let index = gists.findIndex(e => e._id === _id)
+  let index = gists.findIndex(e => e._id === _id);
 
   if (index > -1) {
     let gist = gists[index];
