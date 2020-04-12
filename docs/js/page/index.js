@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
 
-    fetch('data/projects.json')
+    fetch('https://nguyenthienly.github.io/MY_PROFILE/data/projects.json')
       .then((response) => {
         return response.json();
       })
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
 
-    fetch('data/otherProjects.json')
+    fetch('https://nguyenthienly.github.io/MY_PROFILE/data/otherProjects.json')
       .then((response) => {
         return response.json();
       })
@@ -32,7 +32,7 @@ document.addEventListener('scroll', (event) => {
   setTimeout(() => {
     if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
 
-      fetch('data/projects.json')
+      fetch('https://nguyenthienly.github.io/MY_PROFILE/data/projects.json')
         .then((response) => {
           return response.json();
         })
@@ -46,7 +46,7 @@ document.addEventListener('scroll', (event) => {
 
     if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
 
-      fetch('data/otherProjects.json')
+      fetch('https://nguyenthienly.github.io/MY_PROFILE/data/otherProjects.json')
         .then((response) => {
           return response.json();
         })
