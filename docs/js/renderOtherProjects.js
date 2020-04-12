@@ -1,33 +1,37 @@
-let renderOtherProjects = () => {
-  otherProjects.forEach((otherProject, index) => {
-    renderOtherProject(otherProject)
+let renderOtherProjects = (params) => {
+  const { container, list } = params;
+
+  list.forEach((item, index) => {
+    renderOtherProject({ container, item })
   })
 }
 
-let renderOtherProject = (otherProject) => {
-  containerOtherProjectsItem.innerHTML += `
+let renderOtherProject = (params) => {
+  const { container, item } = params;
+
+  container.innerHTML += `
     <div class="other-project light-dark-bg-color border-round d-flex flex-column">
       <div class="d-flex justify-content-between">
           <i class="fas fa-folder other-project__icon primary-txt-color"></i>
 
           <ul class="list-item mt-0 pl-0 d-flex">
-              ${renderRepos(otherProject.repos)}
+              ${renderRepos(item.repos)}
           </ul>
       </div>
 
       <div class="other-project__body">
           <h3 class="gray-txt-color fs-20">
-            ${otherProject.name}
+            ${item.name}
           </h3>
           <p class="mt-0 dark-gray-txt-color fs-secondary">
-            ${otherProject.description}
+            ${item.description}
 
-            <span class="primary-txt-color">${otherProject.note}</span>
+            <span class="primary-txt-color">${item.note}</span>
           </p>
       </div>
 
       <ul class="list-item mb-0 pl-0 d-flex">
-        ${renderTopics(otherProject.topics)}
+        ${renderTopics(item.topics)}
       </ul>
     </div>
   `;

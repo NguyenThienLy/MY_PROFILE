@@ -6,6 +6,9 @@ let isShowedMySeries = false;
 
 let projects = [];
 let otherProjects = [];
+let technicalNotes = [];
+let myStories = [];
+let mySeries = [];
 
 let gists = [
   {
@@ -197,148 +200,148 @@ let gists = [
 //   },
 // ];
 
-let technicalNotes = [
-  {
-    _id: '2dca16a4ea0ef6c2303f196fd7808c6b',
-    name: 'What is closure?',
-    date: '10/04/2020',
-    description: `Xin chào tất cả mọi người, mọi người có biết closures à gì không?
-    Đối với một người mới đi làm như mình thì cũng mơ hồ...`,
-    note: '',
-    topics: [
-      { name: 'Javascript', title: 'Javascript', link: '#' },
-      { name: 'Closure', title: 'Closure', link: '#' }
-    ],
-    repos: [
-      { title: 'gist.github', link: 'https://gist.github.com/2dca16a4ea0ef6c2303f196fd7808c6b.git', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: 'https://dev.to/nguyenthienly/what-is-closure-closure-la-gi-1m4b', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-  {
-    _id: '84a19dd44ae1b0290a4fbeabbe2e0824',
-    name: ' Unit test in typescript by jest',
-    date: '01/04/2020',
-    description: `Xin chào tất cả mọi người, làm developer thì ai cũng phải viết unit test
-    (Định nghĩa phần 2) phải không nào...`,
-    note: '',
-    topics: [
-      { name: 'Nodejs', title: 'Nodejs', link: '#' },
-      { name: 'Javascript', title: 'Javascript', link: '#' },
-      { name: 'Jest', title: 'Jest', link: '#' },
-      { name: 'Unit test', title: 'Unit test', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: 'https://gist.github.com/84a19dd44ae1b0290a4fbeabbe2e0824.git', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: 'https://dev.to/nguyenthienly/unit-test-in-typescript-by-jest-hb0', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-  {
-    _id: '56b9526b4ab60f55ab73dc848ce17041',
-    name: 'Intergrate jade into typescript ...',
-    date: '30/03/2020',
-    description: `Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế
-    require một package hay một module đã có để sử dụng.`,
-    note: '',
-    topics: [
-      { name: 'Nodejs', title: 'Nodejs', link: '#' },
-      { name: 'Javascript', title: 'Javascript', link: '#' },
-      { name: 'Jade', title: 'Jade', link: '#' },
-      { name: 'Typescript', title: 'Typescript', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: 'https://gist.github.com/56b9526b4ab60f55ab73dc848ce17041.git', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: 'https://dev.to/nguyenthienly/intergrate-jade-into-typescript-expressjs-281l', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-  {
-    _id: 'eb6d3ba19738a717cd8201aed273199a',
-    name: 'Import vs require',
-    date: '29/03/2020',
-    description: `Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế
-    require một package hay một module đã có để sử dụng.`,
-    note: '',
-    topics: [
-      { name: 'Nodejs', title: 'Nodejs', link: '#' },
-      { name: 'Javascript', title: 'Javascript', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: 'https://gist.github.com/eb6d3ba19738a717cd8201aed273199a.git', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: 'https://dev.to/nguyenthienly/import-vs-require-3kmn', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-]
+// let technicalNotes = [
+//   {
+//     _id: '2dca16a4ea0ef6c2303f196fd7808c6b',
+//     name: 'What is closure?',
+//     date: '10/04/2020',
+//     description: `Xin chào tất cả mọi người, mọi người có biết closures à gì không?
+//     Đối với một người mới đi làm như mình thì cũng mơ hồ...`,
+//     note: '',
+//     topics: [
+//       { name: 'Javascript', title: 'Javascript', link: '#' },
+//       { name: 'Closure', title: 'Closure', link: '#' }
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: 'https://gist.github.com/2dca16a4ea0ef6c2303f196fd7808c6b.git', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: 'https://dev.to/nguyenthienly/what-is-closure-closure-la-gi-1m4b', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+//   {
+//     _id: '84a19dd44ae1b0290a4fbeabbe2e0824',
+//     name: ' Unit test in typescript by jest',
+//     date: '01/04/2020',
+//     description: `Xin chào tất cả mọi người, làm developer thì ai cũng phải viết unit test
+//     (Định nghĩa phần 2) phải không nào...`,
+//     note: '',
+//     topics: [
+//       { name: 'Nodejs', title: 'Nodejs', link: '#' },
+//       { name: 'Javascript', title: 'Javascript', link: '#' },
+//       { name: 'Jest', title: 'Jest', link: '#' },
+//       { name: 'Unit test', title: 'Unit test', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: 'https://gist.github.com/84a19dd44ae1b0290a4fbeabbe2e0824.git', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: 'https://dev.to/nguyenthienly/unit-test-in-typescript-by-jest-hb0', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+//   {
+//     _id: '56b9526b4ab60f55ab73dc848ce17041',
+//     name: 'Intergrate jade into typescript ...',
+//     date: '30/03/2020',
+//     description: `Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế
+//     require một package hay một module đã có để sử dụng.`,
+//     note: '',
+//     topics: [
+//       { name: 'Nodejs', title: 'Nodejs', link: '#' },
+//       { name: 'Javascript', title: 'Javascript', link: '#' },
+//       { name: 'Jade', title: 'Jade', link: '#' },
+//       { name: 'Typescript', title: 'Typescript', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: 'https://gist.github.com/56b9526b4ab60f55ab73dc848ce17041.git', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: 'https://dev.to/nguyenthienly/intergrate-jade-into-typescript-expressjs-281l', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+//   {
+//     _id: 'eb6d3ba19738a717cd8201aed273199a',
+//     name: 'Import vs require',
+//     date: '29/03/2020',
+//     description: `Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế
+//     require một package hay một module đã có để sử dụng.`,
+//     note: '',
+//     topics: [
+//       { name: 'Nodejs', title: 'Nodejs', link: '#' },
+//       { name: 'Javascript', title: 'Javascript', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: 'https://gist.github.com/eb6d3ba19738a717cd8201aed273199a.git', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: 'https://dev.to/nguyenthienly/import-vs-require-3kmn', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+// ]
 
-let myStories = [
-  {
-    _id: '0',
-    name: 'Hồi kí về quá trình đi phỏng vấn',
-    date: '../04/2020',
-    description: `Xin chào tất cả mọi người, mình chỉ là thằng sinh viên còn chưa ra trường. Nhưng 
-    quá máu nên đã đi làm từ năm hai ...`,
-    note: '',
-    topics: [
-      { name: 'interview', title: 'interview', link: '#' },
-      { name: 'experience', title: 'experience', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: '#', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: '#', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-  {
-    _id: '1',
-    name: 'Kinh nghiệm làm việc nhóm',
-    date: '../04/2020',
-    description: `Xin chào tất cả mọi người, làm việc nhóm là gì tại sao phải học cách làm việc nhóm,
-    làm thế nào hiệu quả ...`,
-    note: '',
-    topics: [
-      { name: 'teamwork', title: 'teamwork', link: '#' },
-      { name: 'experience', title: 'experience', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: '#', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: '#', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-]
+// let myStories = [
+//   {
+//     _id: '0',
+//     name: 'Hồi kí về quá trình đi phỏng vấn',
+//     date: '../04/2020',
+//     description: `Xin chào tất cả mọi người, mình chỉ là thằng sinh viên còn chưa ra trường. Nhưng 
+//     quá máu nên đã đi làm từ năm hai ...`,
+//     note: '',
+//     topics: [
+//       { name: 'interview', title: 'interview', link: '#' },
+//       { name: 'experience', title: 'experience', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: '#', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: '#', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+//   {
+//     _id: '1',
+//     name: 'Kinh nghiệm làm việc nhóm',
+//     date: '../04/2020',
+//     description: `Xin chào tất cả mọi người, làm việc nhóm là gì tại sao phải học cách làm việc nhóm,
+//     làm thế nào hiệu quả ...`,
+//     note: '',
+//     topics: [
+//       { name: 'teamwork', title: 'teamwork', link: '#' },
+//       { name: 'experience', title: 'experience', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: '#', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: '#', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+// ]
 
-let mySeries = [
-  {
-    _id: '4939a7abd67ea114c21b73ac30348b84',
-    name: 'Create CV with BEM - 1',
-    date: '02/04/2020',
-    description: `Xin chào tất cả mọi người, trước đây khi mà mình đi xin việc thì đến giai đoạn nộp CV, 
-    thì mình hay lên topcv.vn hay là ...`,
-    note: '',
-    topics: [
-      { name: 'HTML', title: 'HTML', link: '#' },
-      { name: 'CSS', title: 'CSS', link: '#' },
-      { name: 'JS', title: 'JS', link: '#' },
-      { name: 'BEM', title: 'BEM', link: '#' },
-      { name: 'gist.github', title: 'gist.github', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: 'https://gist.github.com/4939a7abd67ea114c21b73ac30348b84.git', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: 'https://dev.to/nguyenthienly/create-cv-with-bem-4io1', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-  {
-    _id: '719f202047c56e7748de5c9eed868cfe',
-    name: 'Create CV with BEM - 2',
-    date: '01/04/2020',
-    description: `Thông thường thì mọi người code html, csss, mỗi khi thêm một ít
-    code mới lại refresh khá mất thời gian ...`,
-    note: '',
-    topics: [
-      { name: 'Nodejs', title: 'Nodejs', link: '#' },
-      { name: 'Javascript', title: 'Javascript', link: '#' },
-      { name: 'Jest', title: 'Jest', link: '#' },
-      { name: 'Unit test', title: 'Unit test', link: '#' },
-    ],
-    repos: [
-      { title: 'gist.github', link: 'https://gist.github.com/719f202047c56e7748de5c9eed868cfe.git', icon: 'fab fa-sm fa-github' },
-      { title: 'dev.to', link: 'https://dev.to/nguyenthienly/create-cv-with-bem-2-29m7', icon: 'fab fa-sm fa-dev' }
-    ]
-  },
-]
+// let mySeries = [
+//   {
+//     _id: '4939a7abd67ea114c21b73ac30348b84',
+//     name: 'Create CV with BEM - 1',
+//     date: '02/04/2020',
+//     description: `Xin chào tất cả mọi người, trước đây khi mà mình đi xin việc thì đến giai đoạn nộp CV, 
+//     thì mình hay lên topcv.vn hay là ...`,
+//     note: '',
+//     topics: [
+//       { name: 'HTML', title: 'HTML', link: '#' },
+//       { name: 'CSS', title: 'CSS', link: '#' },
+//       { name: 'JS', title: 'JS', link: '#' },
+//       { name: 'BEM', title: 'BEM', link: '#' },
+//       { name: 'gist.github', title: 'gist.github', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: 'https://gist.github.com/4939a7abd67ea114c21b73ac30348b84.git', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: 'https://dev.to/nguyenthienly/create-cv-with-bem-4io1', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+//   {
+//     _id: '719f202047c56e7748de5c9eed868cfe',
+//     name: 'Create CV with BEM - 2',
+//     date: '01/04/2020',
+//     description: `Thông thường thì mọi người code html, csss, mỗi khi thêm một ít
+//     code mới lại refresh khá mất thời gian ...`,
+//     note: '',
+//     topics: [
+//       { name: 'Nodejs', title: 'Nodejs', link: '#' },
+//       { name: 'Javascript', title: 'Javascript', link: '#' },
+//       { name: 'Jest', title: 'Jest', link: '#' },
+//       { name: 'Unit test', title: 'Unit test', link: '#' },
+//     ],
+//     repos: [
+//       { title: 'gist.github', link: 'https://gist.github.com/719f202047c56e7748de5c9eed868cfe.git', icon: 'fab fa-sm fa-github' },
+//       { title: 'dev.to', link: 'https://dev.to/nguyenthienly/create-cv-with-bem-2-29m7', icon: 'fab fa-sm fa-dev' }
+//     ]
+//   },
+// ]

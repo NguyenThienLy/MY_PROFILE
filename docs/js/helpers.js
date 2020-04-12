@@ -1,5 +1,5 @@
-let renderTopics = (topics) => {
-  let newTopics = topics.map((topic, index) => {
+let renderTopics = (list) => {
+  let newList = list.map((item, index) => {
     let marginLeft;
     if (index === 0) {
       marginLeft = 'ml-0';
@@ -8,21 +8,21 @@ let renderTopics = (topics) => {
       marginLeft = 'ml-17';
     }
 
-    let item = `
+    let newItem = `
       <li class="list-item__item ${marginLeft}">
         <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary"
-          href="${topic.link}" title="${topic.title}">${topic.name}</a>
+          href="${item.link}" title="${item.title}">${item.name}</a>
       </li>
     `;
 
-    return item;
+    return newItem;
   })
 
-  return newTopics.join();
+  return newList.join();
 }
 
-let renderRepos = (repos) => {
-  let newRepos = repos.map((repo, index) => {
+let renderRepos = (list) => {
+  let newList = list.map((item, index) => {
     let marginLeft;
     if (index === 0) {
       marginLeft = 'ml-0';
@@ -31,20 +31,20 @@ let renderRepos = (repos) => {
       marginLeft = 'ml-17';
     }
 
-    let item = `
+    let newItem = `
       <li class="list-item__item ${marginLeft}">
         <a class="list-item__link txt-decoration-none dark-gray-txt-color ff-secondary list-item__link--big"
-            href="${repo.link}" target="_blank"
-            title="${repo.title}">
-            <i class="${repo.icon}"></i>
+            href="${item.link}" target="_blank"
+            title="${item.title}">
+            <i class="${item.icon}"></i>
         </a>
       </li>
     `;
 
-    return item;
+    return newItem;
   })
 
-  return newRepos.join();
+  return newList.join();
 }
 
 let onSetScrollTop = (location) => {

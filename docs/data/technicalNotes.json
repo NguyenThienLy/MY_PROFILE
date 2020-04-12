@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "2dca16a4ea0ef6c2303f196fd7808c6b",
+    "name": "What is closure?",
+    "date": "10/04/2020",
+    "description": "Xin chào tất cả mọi người, mọi người có biết closures à gì không? Đối với một người mới đi làm như mình thì cũng mơ hồ...",
+    "note": "",
+    "topics": [
+      { "name": "Javascript", "title": "Javascript", "link": "#" },
+      { "name": "Closure", "title": "Closure", "link": "#" }
+    ],
+    "repos": [
+      { "title": "gist.github", "link": "https://gist.github.com/2dca16a4ea0ef6c2303f196fd7808c6b.git", "icon": "fab fa-sm fa-github" },
+      { "title": "dev.to", "link": "https://dev.to/nguyenthienly/what-is-closure-closure-la-gi-1m4b", "icon": "fab fa-sm fa-dev" }
+    ]
+  },
+  {
+    "_id": "84a19dd44ae1b0290a4fbeabbe2e0824",
+    "name": " Unit test in typescript by jest",
+    "date": "01/04/2020",
+    "description": "Xin chào tất cả mọi người, làm developer thì ai cũng phải viết unit test (Định nghĩa phần 2) phải không nào...",
+    "note": "",
+    "topics": [
+      { "name": "Nodejs", "title": "Nodejs", "link": "#" },
+      { "name": "Javascript", "title": "Javascript", "link": "#" },
+      { "name": "Jest", "title": "Jest", "link": "#" },
+      { "name": "Unit test", "title": "Unit test", "link": "#" }
+    ],
+    "repos": [
+      { "title": "gist.github", "link": "https://gist.github.com/84a19dd44ae1b0290a4fbeabbe2e0824.git", "icon": "fab fa-sm fa-github" },
+      { "title": "dev.to", "link": "https://dev.to/nguyenthienly/unit-test-in-typescript-by-jest-hb0", "icon": "fab fa-sm fa-dev" }
+    ]
+  },
+  {
+    "_id": "56b9526b4ab60f55ab73dc848ce17041",
+    "name": "Intergrate jade into typescript ...",
+    "date": "30/03/2020",
+    "description": "Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế require một package hay một module đã có để sử dụng.",
+    "note": "",
+    "topics": [
+      { "name": "Nodejs", "title": "Nodejs", "link": "#" },
+      { "name": "Javascript", "title": "Javascript", "link": "#" },
+      { "name": "Jade", "title": "Jade", "link": "#" },
+      { "name": "Typescript", "title": "Typescript", "link": "#" }
+    ],
+    "repos": [
+      { "title": "gist.github", "link": "https://gist.github.com/56b9526b4ab60f55ab73dc848ce17041.git", "icon": "fab fa-sm fa-github" },
+      { "title": "dev.to", "link": "https://dev.to/nguyenthienly/intergrate-jade-into-typescript-expressjs-281l", "icon": "fab fa-sm fa-dev" }
+    ]
+  },
+  {
+    "_id": "eb6d3ba19738a717cd8201aed273199a",
+    "name": "Import vs require",
+    "date": "29/03/2020",
+    "description": "Xin chào tất cả mọi người, trước đây khi bắt đầu sử dụng import để thay thế require một package hay một module đã có để sử dụng.",
+    "note": "",
+    "topics": [
+      { "name": "Nodejs", "title": "Nodejs", "link": "#" },
+      { "name": "Javascript", "title": "Javascript", "link": "#" }
+    ],
+    "repos": [
+      { "title": "gist.github", "link": "https://gist.github.com/eb6d3ba19738a717cd8201aed273199a.git", "icon": "fab fa-sm fa-github" },
+      { "title": "dev.to", "link": "https://dev.to/nguyenthienly/import-vs-require-3kmn", "icon": "fab fa-sm fa-dev" }
+    ]
+  }
+]
