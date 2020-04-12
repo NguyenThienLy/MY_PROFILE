@@ -29,15 +29,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 document.addEventListener('scroll', (event) => {
+  console.log("isShowedProjectsaadffa", isShowedProjects)
   setTimeout(() => {
     if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
-
+      console.log("isShowedProjectsaada", isShowedProjects)
       fetch('https://nguyenthienly.github.io/MY_PROFILE/data/projects.json')
         .then((response) => {
           return response.json();
         })
         .then((data) => {
           isShowedProjects = true;
+          console.log("isShowedProjectsbbbb", isShowedProjects)
 
           projects = data;
           renderProjects();
@@ -45,13 +47,14 @@ document.addEventListener('scroll', (event) => {
     }
 
     if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
-
+      console.log("isShowedOtherProjectsccfffcc", isShowedOtherProjects)
       fetch('https://nguyenthienly.github.io/MY_PROFILE/data/otherProjects.json')
         .then((response) => {
           return response.json();
         })
         .then((data) => {
           isShowedOtherProjects = true;
+          console.log("isShowedOtherProjectscccc", isShowedOtherProjects)
 
           otherProjects = data;
           renderOtherProjects();
