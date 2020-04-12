@@ -1,0 +1,88 @@
+[
+  {
+    "_id": "0",
+    "name": "Canteen management",
+    "description": "Cafeteria and food management software helps the cafeteria admin easily capture food and deliver it to customers",
+    "note": "",
+    "topics": [
+      { "name": "WPF", "title": "WPF", "link": "#" },
+      { "name": "SQL Server", "title": "SQL Server", "link": "#" },
+      { "name": "Material design", "title": "Material design", "link": "#" }
+    ],
+    "repos": [
+      { "title": "github", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-github" }
+    ]
+  },
+  {
+    "_id": "1",
+    "name": "Marketing management",
+    "description": "Human resource management software for marketing department, attendance, statistics, KPI calculation, import file. ",
+    "note": "This is first project that i built in first company i worked",
+    "topics": [
+      { "name": "Winform", "title": "Winform", "link": "#" },
+      { "name": "Devexpress", "title": "Devexpress", "link": "#" },
+      { "name": "SQL server", "title": "SQL server", "link": "#" }
+    ],
+    "repos": [
+      { "title": "youtube", "link": "https://www.youtube.com/watch?v=fBms2WxC664&feature=youtu.be", "icon": "fab fa-sm fab fa-youtube" }
+    ]
+  },
+  {
+    "_id": "2",
+    "name": "POSM and BBD management",
+    "description": "Image management software for supermarkets and sale staff, showing pixels, importing from pdf files",
+    "note": "",
+    "topics": [
+      { "name": "Winform", "title": "Winform", "link": "#" },
+      { "name": "Devexpress", "title": "Devexpress", "link": "#" },
+      { "name": "SQL server", "title": "SQL server", "link": "#" }
+    ],
+    "repos": [
+      { "title": "github", "link": "#", "icon": "fab fa-sm fa-github" }
+    ]
+  },
+  {
+    "_id": "3",
+    "name": "Search map home",
+    "description": "The app finds inns and check-in rooms, making it easy for landlords and renters to find each other",
+    "note": "",
+    "topics": [
+      { "name": "Android", "title": "Android", "link": "#" },
+      { "name": "Firebase", "title": "Firebase", "link": "#" },
+      { "name": "Heremap", "title": "Heremap", "link": "#" },
+      { "name": "googlemap", "title": "googlemap", "link": "#" }
+    ],
+    "repos": [
+      { "title": "github", "link": "https://github.com/NguyenThienLy/ProjectAndroid_G8", "icon": "fab fa-sm fa-github" }
+    ]
+  },
+  {
+    "_id": "4",
+    "name": "Profile profesional for Dev",
+    "description": "This is profile for us, it have my information and my blogs",
+    "note": "",
+    "topics": [
+      { "name": "HTML", "title": "HTML", "link": "#" },
+      { "name": "CSS", "title": "CSS", "link": "#" },
+      { "name": "JS", "title": "JS", "link": "#" },
+      { "name": "BEM", "title": "BEM", "link": "#" }
+    ],
+    "repos": [
+      { "title": "website", "link": "https://nguyenthienly.github.io/MY_PROFILE/", "icon": "fas fa-sm fa-external-link-alt" }
+    ]
+  },
+  {
+    "_id": "5",
+    "name": "Weather at your favorite place",
+    "description": "The app helps you find places and see the weather in that area, manage the list of favorite places",
+    "note": "",
+    "topics": [
+      { "name": "typescript", "title": "typescript", "link": "#" },
+      { "name": "googlemap", "title": "googlemap", "link": "#" },
+      { "name": "darkskymap", "title": "darkskymap", "link": "#" }
+    ],
+    "repos": [
+      { "title": "gitlab", "link": "https://gitlab.com/NguyenThienLy/3_idiots", "icon": "fab fa-sm fa-gitlab" }
+    ]
+  }
+]

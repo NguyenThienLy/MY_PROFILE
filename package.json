@@ -1,0 +1,22 @@
+{
+  "name": "my_profile",
+  "version": "1.0.0",
+  "description": "This is profesional profile for dev",
+  "main": "main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenThienLy/MY_PROFILE.git"
+  },
+  "author": "Nguyen Thien Ly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenThienLy/MY_PROFILE/issues"
+  },
+  "homepage": "https://github.com/NguyenThienLy/MY_PROFILE#readme"
+}

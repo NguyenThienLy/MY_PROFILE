@@ -1,28 +1,61 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
-    isShowedProjects = true;
 
-    renderProjects();
+    fetch('../../../data/projects.json')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        isShowedProjects = true;
+
+        projects = data;
+        renderProjects();
+      });
   }
 
-  if (document.documentElement.scrollTop > 3600 && isShowedOtherProjects === false) {
-    isShowedOtherProjects = true;
+  if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
 
-    renderOtherProjects();
+    fetch('../../../data/otherProjects.json')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        isShowedOtherProjects = true;
+
+        otherProjects = data;
+        renderOtherProjects();
+      });
   }
 });
 
 document.addEventListener('scroll', (event) => {
-  if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
-    isShowedProjects = true;
+  setTimeout(() => {
+    if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
 
-    renderProjects();
-  }
+      fetch('../../../data/projects.json')
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          isShowedProjects = true;
 
-  if (document.documentElement.scrollTop > 3600 && isShowedOtherProjects === false) {
-    isShowedOtherProjects = true;
+          projects = data;
+          renderProjects();
+        });
+    }
 
-    renderOtherProjects();
-  }
+    if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
 
+      fetch('../../../data/otherProjects.json')
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          isShowedOtherProjects = true;
+
+          otherProjects = data;
+          renderOtherProjects();
+        });
+    }
+  }, 1000)
 });
