@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         return response.json();
       })
       .then((data) => {
+        console.log("data", data)
         isShowedProjects = true;
 
         projects = data;
