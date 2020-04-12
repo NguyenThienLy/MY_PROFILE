@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
 
-    fetch('../../../docs/data/projects.json')
+    fetch('../../data/projects.json')
       .then((response) => {
         return response.json();
       })
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
 
-    fetch('../../../docs/data/otherProjects.json')
+    fetch('../../data/otherProjects.json')
       .then((response) => {
         return response.json();
       })
@@ -35,7 +35,7 @@ document.addEventListener('scroll', (event) => {
   setTimeout(() => {
     if (document.documentElement.scrollTop > 1800 && !isShowedProjects) {
 
-      fetch('../../../docs/data/projects.json')
+      fetch('../../data/projects.json')
         .then((response) => {
           return response.json();
         })
@@ -49,7 +49,7 @@ document.addEventListener('scroll', (event) => {
 
     if (document.documentElement.scrollTop > 3600 && !isShowedOtherProjects) {
 
-      fetch('../../../docs/data/otherProjects.json')
+      fetch('../../data/otherProjects.json')
         .then((response) => {
           return response.json();
         })
