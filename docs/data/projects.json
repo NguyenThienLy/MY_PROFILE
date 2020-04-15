@@ -20,6 +20,11 @@
         "name": "Firebase API",
         "title": "Firebase API",
         "link": "#"
+      },
+      {
+        "name": "Antd design",
+        "title": "Antd design",
+        "link": "#"
       }
     ],
     "repos": [
@@ -94,8 +99,13 @@
         "link": "#"
       },
       {
-        "name": "Firebase",
-        "title": "Firebase",
+        "name": "Firebase API",
+        "title": "Firebase API",
+        "link": "#"
+      },
+      {
+        "name": "Boostrap",
+        "title": "Boostrap",
         "link": "#"
       }
     ],
