@@ -1,28 +1,36 @@
 let renderBlogs = (params) => {
-  const { container, list, type } = params;
+    const { container, list, type } = params;
 
-  list.forEach((item, index) => {
-    renderBlog({
-      container,
-      item,
-      index,
-      type
+    $.ajax({
+        url: 'https://webapitestting.herokuapp.com/admin/dashboard/category',
+        type: 'GET',
+        // dataType: 'jsonp',
+        success: (data) => {
+            console.log('data', data);
+        }
+    });
+
+    list.forEach((item, index) => {
+        renderBlog({
+            container,
+            item,
+            index,
+            type
+        })
     })
-  })
 }
 
 let renderBlog = (params) => {
-  const { container, item, index, type } = params;
-  let marginTop;
+    const { container, item, index, type } = params;
+    let marginTop;
 
-  if (type === 'my-stories') {
-    marginTop = 'mt-2';
-  }
-  else {
-    marginTop = '';
-  }
+    if (type === 'my-stories') {
+        marginTop = 'mt-2';
+    } else {
+        marginTop = '';
+    }
 
-  container.innerHTML += `
+    container.innerHTML += `
     <div class="post light-dark-bg-color border-round d-flex flex-column ${marginTop}">
       <div class="d-flex justify-content-between align-items-center">
         <div class="txt-decoration-none primary-txt-color ff-secondary fs-primary">
