@@ -1,15 +1,6 @@
 let renderBlogs = (params) => {
     const { container, list, type } = params;
 
-    $.ajax({
-        url: 'https://webapitestting.herokuapp.com/admin/dashboard/category',
-        type: 'GET',
-        dataType: 'jsonp',
-        success: (data) => {
-            console.log('data', data);
-        }
-    });
-
     list.forEach((item, index) => {
         renderBlog({
             container,
