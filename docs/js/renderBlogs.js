@@ -4,7 +4,7 @@ let renderBlogs = (params) => {
     $.ajax({
         url: 'https://webapitestting.herokuapp.com/admin/dashboard/category',
         type: 'GET',
-        // dataType: 'jsonp',
+        dataType: 'jsonp',
         success: (data) => {
             console.log('data', data);
         }
