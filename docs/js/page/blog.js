@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('/docs/data/socials.json')
+    fetch('https://nguyenthienly.github.io/MY_PROFILE/data/socials.json')
         .then((response) => {
             return response.json();
         })

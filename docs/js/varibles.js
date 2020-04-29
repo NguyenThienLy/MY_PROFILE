@@ -1,8 +1,9 @@
-let isShowedProjects = false;
-let isShowedOtherProjects = false;
-let isShowedTechnicalNotes = false;
-let isShowedMyStories = false;
-let isShowedMySeries = false;
+const isShowedProjects = false;
+const isShowedOtherProjects = false;
+const isShowedTechnicalNotes = false;
+const isShowedMyStories = false;
+const isShowedMySeries = false;
+const host = window.location.host;
 
 let projects = [];
 let otherProjects = [];
