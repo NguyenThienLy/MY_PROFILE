@@ -41,81 +41,41 @@
     <link rel="stylesheet" href="./css/page/index.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,400,500|Roboto&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4413904649.js" crossorigin="anonymous"></script>
 
 
 </head>
 
 <body class="m-0 secondary-bg-color ff-primary">
-    <header
-        class="header d-flex align-items-center top-0 left-50 z-index-2 position-sticky w-100 h-primary light-dark-bg-color">
+    <header class="header d-flex align-items-center top-0 left-50 z-index-2 position-sticky w-100 h-primary light-dark-bg-color">
         <a class="header-link" href="">
-            <img class="header__logo"
-                src="https://www.nashtechglobal.com/wp-content/themes/nashtech/library/images/NashTech-logo-new.svg"
-                alt="">
+            <img class="header__logo" src="https://www.nashtechglobal.com/wp-content/themes/nashtech/library/images/NashTech-logo-new.svg" alt="">
         </a>
 
         <ol class="header__list ml-2 d-flex justify-content-end ff-secondary">
-            <li class="header__item primary-txt-color">01.<a
-                    class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" 
-                    onclick="onSetScrollTop(800)">About</a>
+            <li class="header__item primary-txt-color">01.<a class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" onclick="onSetScrollTop(800)">About</a>
             </li>
-            <li class="header__item primary-txt-color">02.<a
-                    class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none"
-                    onclick="onSetScrollTop(1500)">Experience</a>
+            <li class="header__item primary-txt-color">02.<a class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" onclick="onSetScrollTop(1500)">Experience</a>
             </li>
-            <li class="header__item primary-txt-color">03.<a
-                    class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" 
-                    onclick="onSetScrollTop(2200)">Work</a>
+            <li class="header__item primary-txt-color">03.<a class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" onclick="onSetScrollTop(2200)">Work</a>
             </li>
-            <li class="header__item primary-txt-color">04.<a
-                    class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" 
-                    onclick="onSetScrollTop(5100)">Contact</a>
+            <li class="header__item primary-txt-color">04.<a class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none" onclick="onSetScrollTop(5100)">Contact</a>
             </li>
         </ol>
 
-        <a href="blog.html"
-            class="btn btn--small ml-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center primary-bd-color">My
+        <a href="blog.html" class="btn btn--small ml-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center primary-bd-color">My
             blog</a>
     </header>
 
     <section class="social position-fixed bottom-0 d-flex flex-column z-index-1 align-items-center z-index-1">
-        <ul class="social__list p-0">
-            <li class="social__item">
-                <a class="social__link dark-gray-txt-color" href="https://github.com/NguyenThienLy" target="_blank">
-                    <i class="fab fa-lg fa-github">
-                    </i>
-                </a>
-            </li>
-
-            <li class="social__item">
-                <a class="social__link dark-gray-txt-color" href="https://www.linkedin.com/in/NguyenThienLy2212/"
-                    target="_blank">
-                    <i class="fab fa-lg fa-linkedin-in"></i>
-                </a>
-            </li>
-
-            <li class="social__item">
-                <a class="social__link dark-gray-txt-color" href="https://www.facebook.com/thienly.nguyen.315"
-                    target="_blank"><i class="fab fa-lg fa-facebook-f"></i>
-                </a>
-            </li>
-
-            <li class="social__item">
-                <a class="social__link dark-gray-txt-color" href="https://dev.to/nguyenthienly" target="_blank">
-                    <i class="fab fa-lg fa-dev"></i>
-                </a>
-            </li>
+        <ul class="social__list p-0" id="container-socials-item">
         </ul>
         <div class="social__line top-0 left-50 transform-translate-X--50"></div>
     </section>
 
     <section class="email d-flex flex-column align-items-center position-fixed bottom-0 z-index-1">
-        <a href="https://www.google.com/"
-            class="email__content dark-gray-txt-color txt-decoration-none ff-secondary fs-primary transform-rotate-90">
+        <a href="https://www.google.com/" class="email__content dark-gray-txt-color txt-decoration-none ff-secondary fs-primary transform-rotate-90">
             Ly.NguyenThien@nashtechglobal.com
         </a>
         <div class="email__line top-0 left-50 transform-translate-X--50"></div>
@@ -133,8 +93,7 @@
             </span>
 
 
-            <a href="https://www.linkedin.com/in/NguyenThienLy2212/" target="_blank"
-                class="btn btn--big mt-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center primary-bd-color">
+            <a href="https://www.linkedin.com/in/NguyenThienLy2212/" target="_blank" class="btn btn--big mt-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center primary-bd-color">
                 Get In Touch
             </a>
         </section>
@@ -148,19 +107,12 @@
 
             <div class="about-me__content mt-secondary d-grid">
                 <div>
-                    <p class="about-me__text dark-gray-txt-color mt-0">Hello! I'm Ly Nguyen, a software engineer based
-                        in <span class="primary-txt-color">HCMC</span>, <span class="primary-txt-color">HCMC</span> is
-                        Indochina Pearl.
-                        I develop exceptional websites and web apps that provide intuitive, pixel-perfect user
-                        interfaces with efficient and modern backends.
+                    <p class="about-me__text dark-gray-txt-color mt-0">Hello! I'm Ly Nguyen, a software engineer based in <span class="primary-txt-color">HCMC</span>, <span class="primary-txt-color">HCMC</span> is Indochina Pearl. I develop exceptional websites and web apps that provide intuitive, pixel-perfect
+                        user interfaces with efficient and modern backends.
                     </p>
 
-                    <p class="about-me__text dark-gray-txt-color mt-0">I'm a 4 years study in <span
-                            class="primary-txt-color">Science
-                            University</span>, I joined the
-                        engineering team at <span class="about-me__text--highlight">DSV company</span>. where I work on
-                        a wide variety of interesting and meaningful
-                        projects on a daily basis.
+                    <p class="about-me__text dark-gray-txt-color mt-0">I'm a 4 years study in <span class="primary-txt-color">Science
+                            University</span>, I joined the engineering team at <span class="about-me__text--highlight">DSV company</span>. where I work on a wide variety of interesting and meaningful projects on a daily basis.
                     </p>
 
                     <p class="about-me__text dark-gray-txt-color mt-0">
@@ -204,8 +156,7 @@
 
                 <div class="avatar d-flex justify-content-end align-items-start position-relative z-index-1">
                     <div class="avatar__container border-round z-index-1 primary-bg-color">
-                        <img class="w-100 h-100"
-                            src="https://avatars3.githubusercontent.com/u/39694887?s=400&u=2f419055c0d22305e3417363b6d0d28d802e305a&v=4">
+                        <img class="w-100 h-100" src="https://avatars3.githubusercontent.com/u/39694887?s=400&u=2f419055c0d22305e3417363b6d0d28d802e305a&v=4">
                     </div>
                     <div class="avatar__border position-absolute z-index-0 border-round"></div>
                 </div>
@@ -221,25 +172,16 @@
 
             <div class="timeline mt-secondary">
                 <div class="timeline__tab float-left">
-                    <button
-                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
-                        onclick="openCity(event, 'id-nashtech')" id="defaultOpen">Nash Tech</button>
-                    <button
-                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
-                        onclick="openCity(event, 'id-dsv')">DSV</button>
-                    <button
-                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
-                        onclick="openCity(event, 'id-pegasus')">PEGASUS</button>
-                    <button
-                        class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color"
-                        onclick="openCity(event, 'id-long-dan')">LongDan</button>
+                    <button class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color" onclick="openCity(event, 'id-nashtech')" id="defaultOpen">Nash Tech</button>
+                    <button class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color" onclick="openCity(event, 'id-dsv')">DSV</button>
+                    <button class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color" onclick="openCity(event, 'id-pegasus')">PEGASUS</button>
+                    <button class="timeline__btn cursor-pointer dark-gray-txt-color border-0 w-100 ff-secondary txt-align-left dark-gray-bd-color" onclick="openCity(event, 'id-long-dan')">LongDan</button>
                 </div>
 
                 <div id="id-nashtech" class="timeline-item float-left h-100 dark-gray-txt-color">
                     <div class="timeline-item__header timeline-item__header d-flex align-items-center fw-600">
                         <p class="m-0 gray-txt-color">Fresher developer</p>
-                        <a class="primary-txt-color ml-1 txt-decoration-none" target="blank"
-                            href="https://www.nashtechglobal.com/">@ NashTechGlobal</a>
+                        <a class="primary-txt-color ml-1 txt-decoration-none" target="blank" href="https://www.nashtechglobal.com/">@ NashTechGlobal</a>
                     </div>
 
                     <div class="mt-1">
@@ -247,14 +189,11 @@
 
                         <ul class="list-content mt-30 p-0">
                             <li class="list-content__item position-relative mr-1 pl-3 fs-secondary">
-                                Project profile for team, favorite location, books store. This is <span
-                                    class="primary-txt-color">project test entry</span>
+                                Project profile for team, favorite location, books store. This is <span class="primary-txt-color">project test entry</span>
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
-                                Work with a variety of different languages, platforms, frameworks, and content
-                                management
-                                systems such as Nodejs, MongoDB, Angular
+                                Work with a variety of different languages, platforms, frameworks, and content management systems such as Nodejs, MongoDB, Angular
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
@@ -267,8 +206,7 @@
                 <div id="id-dsv" class="timeline-item float-left h-100 dark-gray-txt-color">
                     <div class="timeline-item__header timeline-item__header d-flex align-items-center fw-600">
                         <p class="m-0 gray-txt-color">Intern designdeveloper</p>
-                        <a class="primary-txt-color ml-1 txt-decoration-none" target="blank"
-                            href="https://www.designveloper.com/">@ DSV</a>
+                        <a class="primary-txt-color ml-1 txt-decoration-none" target="blank" href="https://www.designveloper.com/">@ DSV</a>
                     </div>
 
                     <div class="mt-1">
@@ -281,9 +219,7 @@
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
-                                Work with a variety of different languages, platforms, frameworks, and content
-                                management
-                                systems such as Nodejs, MongoDB, reactjs
+                                Work with a variety of different languages, platforms, frameworks, and content management systems such as Nodejs, MongoDB, reactjs
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
@@ -308,9 +244,7 @@
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
-                                Work with a variety of different languages, platforms, frameworks, and content
-                                management
-                                systems such as reactjs, nextjs, MongoDB
+                                Work with a variety of different languages, platforms, frameworks, and content management systems such as reactjs, nextjs, MongoDB
                             </li>
                         </ul>
                     </div>
@@ -319,8 +253,7 @@
                 <div id="id-long-dan" class="timeline-item float-left h-100 dark-gray-txt-color">
                     <div class="timeline-item__header d-flex align-items-center fw-600">
                         <p class="m-0 gray-txt-color">Intern marketing dev</p>
-                        <a class="primary-txt-color ml-1 txt-decoration-none" target="blank"
-                            href="http://kimson.co.uk/">@ LongDan</a>
+                        <a class="primary-txt-color ml-1 txt-decoration-none" target="blank" href="http://kimson.co.uk/">@ LongDan</a>
                     </div>
 
                     <div class="mt-1">
@@ -328,23 +261,15 @@
 
                         <ul class="list-content mt-30 p-0">
                             <li class="list-content__item position-relative mr-1 pl-3 fs-secondary">
-                                Developing software to manage the work for the marketing room of Kim Son - Long Dan
-                                company
-                                on C# winform
-                                Develop software to manage POSM and BBD for the marketing room of Kim Son - Long Dan
-                                company
-                                on C#
+                                Developing software to manage the work for the marketing room of Kim Son - Long Dan company on C# winform Develop software to manage POSM and BBD for the marketing room of Kim Son - Long Dan company on C#
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
-                                Work with a variety of different languages, platforms, frameworks, and content
-                                management
-                                systems such as C#, winform, WPF
+                                Work with a variety of different languages, platforms, frameworks, and content management systems such as C#, winform, WPF
                             </li>
 
                             <li class="list-content__item position-relative mt-1 mr-1 pl-3 fs-secondary">
-                                Communicate with multi-disciplinary teams of marketing, dev, sale, and clients on
-                                a daily basis
+                                Communicate with multi-disciplinary teams of marketing, dev, sale, and clients on a daily basis
                             </li>
                         </ul>
                     </div>
@@ -386,8 +311,7 @@
                 my best to answer your messages!
             </span>
 
-            <a href="https://www.facebook.com/thienly.nguyen.315" target="_blank"
-                class="btn btn--big mt-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center mb-primary primary-bd-color">Say
+            <a href="https://www.facebook.com/thienly.nguyen.315" target="_blank" class="btn btn--big mt-5 txt-decoration-none primary-txt-color ff-secondary border-round txt-align-center mb-primary primary-bd-color">Say
                 hello</a>
         </section>
     </main>
@@ -401,6 +325,7 @@
 <script src="./js/varibles.js"></script>
 <script src="./js/timeline.js"></script>
 <script src="./js/helpers.js"></script>
+<script src="./js/renderSocials.js"></script>
 <script src="./js/renderProjects.js"></script>
 <script src="./js/renderOtherProjects.js"></script>
 <script src="./js/page/index.js"></script>

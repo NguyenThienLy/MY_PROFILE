@@ -14,4 +14,4 @@ let containerOtherProjectsItem = document.getElementById('container-other-projec
 let containerTechnicalNotesItem = document.getElementById('container-technical-notes-item');
 let containerMyStoriesItem = document.getElementById('container-my-stories-item');
 let containerMySeries1Item = document.getElementById('container-my-series-1-item');
-
+let containerSocialsItem = document.getElementById('container-socials-item');

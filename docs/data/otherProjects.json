@@ -95,7 +95,8 @@
             { "name": "ngrx", "title": "ngrx", "link": "#" }
         ],
         "repos": [
-            { "title": "gitlab", "link": "https://gitlab.com/NguyenThienLy/book_store_fontend", "icon": "fab fa-sm fa-gitlab" }
+            { "title": "gitlab", "link": "https://gitlab.com/NguyenThienLy/book_store_fontend", "icon": "fab fa-sm fa-gitlab" },
+            { "title": "website", "link": "https://book-store-de.web.app", "icon": "fas fa-sm fa-external-link-alt" }
         ]
     }
 ]
