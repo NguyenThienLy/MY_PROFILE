@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('https://nguyenthienly.github.io/MY_PROFILE/data/socials.json')
+    fetch(`${host}/data/socials.json`)
         .then((response) => {
             return response.json();
         })
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch('https://nguyenthienly.github.io/MY_PROFILE/data/projects.json')
+    fetch(`${host}/data/projects.json`)
         .then((response) => {
             return response.json();
         })
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch('https://nguyenthienly.github.io/MY_PROFILE/data/otherProjects.json')
+    fetch(`${host}/data/otherProjects.json`)
         .then((response) => {
             return response.json();
         })

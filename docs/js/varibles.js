@@ -3,7 +3,7 @@ const isShowedOtherProjects = false;
 const isShowedTechnicalNotes = false;
 const isShowedMyStories = false;
 const isShowedMySeries = false;
-const host = window.location.host;
+const host = 'https://nguyenthienly.github.io/MY_PROFILE';
 
 let projects = [];
 let otherProjects = [];
