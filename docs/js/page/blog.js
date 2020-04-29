@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return response.json();
         })
         .then((data) => {
-            isShowedTechnicalNotes = true;
 
             technicalNotes = data;
             renderBlogs({
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return response.json();
         })
         .then((data) => {
-            isShowedMyStories = true;
 
             myStories = data;
             renderBlogs({
@@ -46,7 +44,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return response.json();
         })
         .then((data) => {
-            isShowedMySeries = true;
 
             mySeries = data;
             renderBlogs({
