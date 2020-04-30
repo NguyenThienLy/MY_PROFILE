@@ -39,15 +39,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/mySeries.json`)
+    fetch(`/docs/data/topicSeries.json`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            topicSeries = data;
+            renderTable({
+                container: containerTopicSeriesItem,
+                list: topicSeries
+            });
+        });
+
+    fetch(`/docs/data/mySeries.json`)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
 
             mySeries = data;
-            renderBlogs({
-                container: containerMySeries1Item,
+            renderSeries({
+                container: containerMySeriesItem,
                 list: mySeries,
                 type: 'my-series'
             });

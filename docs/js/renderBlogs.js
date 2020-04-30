@@ -1,4 +1,4 @@
-let renderBlogs = (params) => {
+const renderBlogs = (params) => {
     const { container, list, type } = params;
 
     list.forEach((item, index) => {
@@ -11,7 +11,7 @@ let renderBlogs = (params) => {
     })
 }
 
-let renderBlog = (params) => {
+const renderBlog = (params) => {
     const { container, item, index, type } = params;
     let marginTop;
 
