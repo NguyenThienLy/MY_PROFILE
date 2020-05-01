@@ -5,9 +5,10 @@
         "code": "#profile",
         "quantity": "2",
         "topics": [
-            { "name": "WPF", "title": "WPF", "link": "#" },
-            { "name": "SQL Server", "title": "SQL Server", "link": "#" },
-            { "name": "Material design", "title": "Material design", "link": "#" }
+            { "name": "html", "title": "html", "link": "#" },
+            { "name": "css", "title": "css", "link": "#" },
+            { "name": "js", "title": "js", "link": "#" },
+            { "name": "BEM", "title": "BEM", "link": "#" }
         ],
         "repos": [
             { "title": "github", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-github" },
@@ -21,12 +22,13 @@
         "code": "#git",
         "quantity": "1",
         "topics": [
-            { "name": "Winform", "title": "Winform", "link": "#" },
-            { "name": "Devexpress", "title": "Devexpress", "link": "#" },
-            { "name": "SQL server", "title": "SQL server", "link": "#" }
+            { "name": "git", "title": "git", "link": "#" },
+            { "name": "github", "title": "github", "link": "#" },
+            { "name": "git karaken", "title": "git karaken", "link": "#" }
         ],
         "repos": [
-            { "title": "youtube", "link": "https://www.youtube.com/watch?v=fBms2WxC664&feature=youtu.be", "icon": "fab fa-sm fab fa-youtube" }
+            { "title": "github", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-github" },
+            { "title": "dev.to", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-dev" }
         ]
     },
     {
@@ -36,12 +38,13 @@
         "code": "#angular",
         "quantity": "0",
         "topics": [
-            { "name": "Winform", "title": "Winform", "link": "#" },
-            { "name": "Devexpress", "title": "Devexpress", "link": "#" },
-            { "name": "SQL server", "title": "SQL server", "link": "#" }
+            { "name": "Angular", "title": "Angular", "link": "#" },
+            { "name": "rxjs", "title": "rxjs", "link": "#" },
+            { "name": "ngrx", "title": "ngrx", "link": "#" }
         ],
         "repos": [
-            { "title": "github", "link": "#", "icon": "fab fa-sm fa-github" }
+            { "title": "github", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-github" },
+            { "title": "dev.to", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-dev" }
         ]
     },
     {
@@ -51,13 +54,13 @@
         "code": "#OOP",
         "quantity": "0",
         "topics": [
-            { "name": "Android", "title": "Android", "link": "#" },
-            { "name": "Firebase", "title": "Firebase", "link": "#" },
-            { "name": "Heremap", "title": "Heremap", "link": "#" },
-            { "name": "googlemap", "title": "googlemap", "link": "#" }
+            { "name": "characteristics", "title": "Android", "link": "#" },
+            { "name": "SOLID", "title": "Firebase", "link": "#" },
+            { "name": "design pattern ", "title": "Heremap", "link": "#" }
         ],
         "repos": [
-            { "title": "gist", "link": "https://github.com/NguyenThienLy/ProjectAndroid_G8", "icon": "fab fa-sm fa-github" }
+            { "title": "gist", "link": "https://github.com/NguyenThienLy/ProjectAndroid_G8", "icon": "fab fa-sm fa-github" },
+            { "title": "dev.to", "link": "https://github.com/NguyenThienLy/ISE_NNDK_13", "icon": "fab fa-sm fa-dev" }
         ]
     }
 ]

@@ -4,7 +4,7 @@ let renderTable = (params) => {
     container.innerHTML = `
     <tr>
         <th class="dark-gray-txt-color">Time update</th>
-        <th class="dark-gray-txt-color">Name</th>
+        <th class="dark-gray-txt-color">Topic</th>
         <th class="dark-gray-txt-color">Code</th>
         <th class="dark-gray-txt-color">Quantiy</th>
         <th class="dark-gray-txt-color">Tags</th>
