@@ -6,6 +6,7 @@
 .header__logo {
     width: 50px;
     height: 50px;
+    fill: var(--primary-color);
 }
 
 .header__list {
@@ -13,14 +14,13 @@
     list-style: none;
 }
 
-.header__item{
+.header__item {
     margin: 0px 10px;
     font-size: 13px;
 }
 
-.header__link {
-}
+.header__link {}
 
-.header__link:hover{
+.header__link:hover {
     color: var(--primary-color);
 }

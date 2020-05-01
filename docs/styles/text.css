@@ -1,15 +1,23 @@
 .txt-decoration-none {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .txt-align-center {
-  text-align: center;
+    text-align: center;
 }
 
 .txt-align-left {
-  text-align: left;
+    text-align: left;
 }
 
 .txt-align-right {
-  text-align: right;
+    text-align: right;
+}
+
+.txt-break-line {
+    word-break: break-all;
+}
+
+.txt-line-height-secondary {
+    line-height: 1.75;
 }

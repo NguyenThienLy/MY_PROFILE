@@ -1,42 +1,43 @@
 .fs-primary {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .fs-secondary {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .fs-13 {
-  font-size: 13px;
+    font-size: 13px;
 }
-
 
 .fs-16 {
-  font-size: 16px;
+    font-size: 16px;
 }
 
-
 .fs-22 {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 .fs-20 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
+.fst-italic {
+    font-style: italic;
+}
 
 .ff-secondary {
-  font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code', monospace;
 }
 
 .ff-primary {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .fw-bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .fw-600 {
-  font-weight: 600;
+    font-weight: 600;
 }
