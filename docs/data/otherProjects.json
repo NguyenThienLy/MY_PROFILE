@@ -67,6 +67,7 @@
             { "name": "BEM", "title": "BEM", "link": "#" }
         ],
         "repos": [
+            { "title": "github", "link": "https://github.com/NguyenThienLy/MY_PROFILE", "icon": "fab fa-sm fa-gitlab" },
             { "title": "website", "link": "https://nguyenthienly.github.io/MY_PROFILE/", "icon": "fas fa-sm fa-external-link-alt" }
         ]
     },

@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
+    fetch(`${host}/data/topicSeries.json`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            topicSeries = data;
+            renderTable({
+                container: containerTopicSeriesItem,
+                list: topicSeries
+            });
+        });
+
     fetch(`${host}/data/mySeries.json`)
         .then((response) => {
             return response.json();
@@ -46,8 +58,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         .then((data) => {
 
             mySeries = data;
-            renderBlogs({
-                container: containerMySeries1Item,
+            renderSeries({
+                container: containerMySeriesItem,
                 list: mySeries,
                 type: 'my-series'
             });

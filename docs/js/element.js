@@ -13,5 +13,6 @@ let containerProjectsItem = document.getElementById('container-projects-item');
 let containerOtherProjectsItem = document.getElementById('container-other-projects-item');
 let containerTechnicalNotesItem = document.getElementById('container-technical-notes-item');
 let containerMyStoriesItem = document.getElementById('container-my-stories-item');
-let containerMySeries1Item = document.getElementById('container-my-series-1-item');
 let containerSocialsItem = document.getElementById('container-socials-item');
+let containerMySeriesItem = document.getElementById('container-my-series-item');
+let containerTopicSeriesItem = document.getElementById('container-topic-series-item');

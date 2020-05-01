@@ -1,0 +1,15 @@
+.table {
+    border-collapse: collapse;
+}
+
+.table__row:hover {
+    background-color: var(--light-dark-color);
+}
+
+td,
+th {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+tr:nth-child(even) {}
