@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`/docs/data/topicSeries.json`)
+    fetch(`${host}/data/topicSeries.json`)
         .then((response) => {
             return response.json();
         })
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`/docs/data/mySeries.json`)
+    fetch(`${host}/data/mySeries.json`)
         .then((response) => {
             return response.json();
         })
