@@ -6,7 +6,7 @@ audioPlayer.addEventListener('timeupdate', () => {
 
 audioNext.addEventListener('click', () => {
     currentSong++;
-    if (currentSong > songs.length) {
+    if (currentSong > songs.length - 1) {
         currentSong = 0;
     }
     audioPlaySong();
@@ -16,7 +16,7 @@ audioNext.addEventListener('click', () => {
 audioPrevious.addEventListener('click', () => {
     currentSong--;
     if (currentSong < 0) {
-        currentSong = songs.length;
+        currentSong = songs.length - 1;
     }
     audioPlaySong();
     audioShowPausePlay.src = "image/Pause.png";
@@ -31,6 +31,8 @@ audioPlay.addEventListener('click', () => {
         audioShowPausePlay.src = "image/Play.png";
     }
 });
+
+
 
 const audioPlaySong = () => {
     audioPlayer.src = songs[currentSong].src;
