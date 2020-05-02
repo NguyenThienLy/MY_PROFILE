@@ -14,6 +14,13 @@ let socials = [];
 let topicSeries = [];
 let menu = [];
 
+let songs = [
+    { src: "media/hoa-hong-dai.mp3", name: "Hoa Hong Dai", singer: "Binz" },
+    { src: "media/noi-anh-ve.mp3", name: "Noi Anh Ve", singer: "Binz" }
+];
+let audioPlayer = new Audio();
+let currentSong = 0;
+
 let gists = [{
         _id: 'eb6d3ba19738a717cd8201aed273199a',
         author: 'NguyenThienLy',

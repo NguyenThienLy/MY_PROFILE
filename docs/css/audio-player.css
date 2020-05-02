@@ -1,0 +1,90 @@
+.audio {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.audio__icon {
+    width: 50px;
+    height: 50px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 1px solid var(--primary-color);
+}
+
+.audio__collapse {
+    /* background-color: blue; */
+}
+
+.audio__collapse:hover+.audio__extend {
+    display: block;
+}
+
+.audio__extend:hover {
+    display: block;
+}
+
+.audio__extend {
+    width: 100%;
+    top: 100%;
+    border-radius: 15px;
+    display: none;
+}
+
+.audio__player {
+    padding: 25px;
+}
+
+.audio__buttons {
+    height: 50px;
+    top: 10%;
+}
+
+.audio__play,
+.audio__next,
+.audio__pre {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    outline: none;
+}
+
+.audio__next {
+    width: 30px;
+    height: 30px;
+    left: 70%;
+}
+
+.audio__pre {
+    width: 30px;
+    height: 30px;
+    left: 30%;
+}
+
+.audio__seek-bar {
+    height: 5px;
+    border-radius: 50px;
+}
+
+.audio__fill {
+    height: 5px;
+    border-radius: 20px;
+}
+
+.audio__handle {
+    width: 8px;
+    height: 8px;
+    margin-left: -5px;
+    transform: scale(2);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
