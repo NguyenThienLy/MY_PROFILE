@@ -10,7 +10,7 @@ audioNext.addEventListener('click', () => {
         currentSong = 0;
     }
     audioPlaySong();
-    audioShowPausePlay.src = "image/Pause.png";
+    audioUpdateCollapseExtend('image/Pause.png');
 });
 
 audioPrevious.addEventListener('click', () => {
@@ -19,16 +19,26 @@ audioPrevious.addEventListener('click', () => {
         currentSong = songs.length - 1;
     }
     audioPlaySong();
-    audioShowPausePlay.src = "image/Pause.png";
+    audioUpdateCollapseExtend('image/Pause.png');
 });
 
-audioPlay.addEventListener('click', () => {
+audioPlayExtend.addEventListener('click', () => {
     if (audioPlayer.paused) {
         audioPlayer.play();
-        audioShowPausePlay.src = "image/Pause.png";
+        audioUpdateCollapseExtend('image/Pause.png');
     } else {
         audioPlayer.pause();
-        audioShowPausePlay.src = "image/Play.png";
+        audioUpdateCollapseExtend('image/Play.png');
+    }
+});
+
+audioPlayCollapse.addEventListener('click', () => {
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+        audioUpdateCollapseExtend('image/Pause.png');
+    } else {
+        audioPlayer.pause();
+        audioUpdateCollapseExtend('image/Play.png');
     }
 });
 
@@ -44,4 +54,9 @@ const audioPlaySong = () => {
 const audioUpdateInfo = () => {
     audioSongTitle.textContent = songs[currentSong].name;
     audioSinger.textContent = songs[currentSong].singer;
+}
+
+const audioUpdateCollapseExtend = (src) => {
+    audioShowPausePlayExtend.src = src;
+    audioShowPausePlayCollapse.src = src;
 }

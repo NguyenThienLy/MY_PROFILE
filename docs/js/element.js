@@ -23,13 +23,14 @@ const btnExperienceHeader = document.getElementById('btn-experience-header');
 const btnWorkHeader = document.getElementById('btn-work-header');
 const btnContactHeader = document.getElementById('btn-contact-header');
 
-
+const audioPlayCollapse = document.getElementById('audio-play-collapse');
 const audioPrevious = document.getElementById('audio-previous');
-const audioPlay = document.getElementById('audio-play');
+const audioPlayExtend = document.getElementById('audio-play-extend');
 const audioNext = document.getElementById('audio-next');
 const audioSeekBar = document.getElementById('audio-seek-bar');
 const audioFillBar = document.getElementById('audio-fill-bar');
 const audioHandle = document.getElementById('audio-handle');
 const audioSongTitle = document.getElementById('audio-song-title');
 const audioSinger = document.getElementById('audio-singer');
-const audioShowPausePlay = document.getElementById('audio-show-pause-play');
+const audioShowPausePlayExtend = document.getElementById('audio-show-pause-play-extend');
+const audioShowPausePlayCollapse = document.getElementById('audio-show-pause-play-collapse');

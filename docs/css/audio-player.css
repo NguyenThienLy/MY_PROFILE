@@ -5,6 +5,7 @@
 }
 
 .audio__icon {
+    outline: none;
     width: 50px;
     height: 50px;
     animation-name: spin;
