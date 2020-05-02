@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    fetch(`${host}/data/menu.json`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            menu = data;
+            renderMenu({
+                container: containerMenuItem,
+                list: menu[1].list
+            });
+        });
+
+
     fetch(`${host}/data/socials.json`)
         .then((response) => {
             return response.json();

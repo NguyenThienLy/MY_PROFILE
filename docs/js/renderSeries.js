@@ -26,7 +26,7 @@ const renderSeriesItem = (params) => {
 
       <div class="mt-secondary d-grid grid-col-2 grid-gap-2" id="${item.container}">
       </div>
-`;
+    `;
 
     renderBlogs({
         container: document.getElementById(item.container),

@@ -12,6 +12,7 @@ let myStories = [];
 let mySeries = [];
 let socials = [];
 let topicSeries = [];
+let menu = [];
 
 let gists = [{
         _id: 'eb6d3ba19738a717cd8201aed273199a',

@@ -1,15 +1,19 @@
-let renderOtherProjects = (params) => {
-  const { container, list } = params;
+const renderOtherProjects = (params) => {
+    const { container, list, offset, limit } = params;
 
-  list.forEach((item, index) => {
-    renderOtherProject({ container, item })
-  })
+    container.innerHTML = '';
+
+    list.slice(offset, limit).forEach((item, index) => {
+        renderOtherProject({ container, item })
+    })
+
+    renderButtonExtendCollapse(params);
 }
 
-let renderOtherProject = (params) => {
-  const { container, item } = params;
+const renderOtherProject = (params) => {
+    const { container, item } = params;
 
-  container.innerHTML += `
+    container.innerHTML += `
     <div class="other-project light-dark-bg-color border-round d-flex flex-column">
       <div class="d-flex justify-content-between">
           <i class="fas fa-folder other-project__icon primary-txt-color"></i>

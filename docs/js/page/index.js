@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    fetch(`${host}/data/menu.json`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            menu = data;
+            renderMenu({
+                container: containerMenuItem,
+                list: menu[0].list
+            });
+        });
+
     fetch(`${host}/data/socials.json`)
         .then((response) => {
             return response.json();
@@ -33,7 +45,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             otherProjects = data;
             renderOtherProjects({
                 container: containerOtherProjectsItem,
-                list: otherProjects
+                list: otherProjects,
+                offset: 0,
+                limit: 6,
+                defaultQuantity: 6,
+                btn: 'btn-other-projects',
+                isExtend: false
             });
         });
 });

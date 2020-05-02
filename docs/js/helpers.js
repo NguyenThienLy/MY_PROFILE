@@ -1,4 +1,4 @@
-let renderTopics = (list) => {
+const renderTopics = (list) => {
     let newList = list.map((item, index) => {
         let marginLeft;
         if (index === 0) {
@@ -20,7 +20,7 @@ let renderTopics = (list) => {
     return newList.join('');
 }
 
-let renderRepos = (list) => {
+const renderRepos = (list) => {
     let newList = list.map((item, index) => {
         let marginLeft;
         if (index === 0) {
@@ -45,6 +45,22 @@ let renderRepos = (list) => {
     return newList.join('');
 }
 
-let onSetScrollTop = (location) => {
+const onSetScrollTop = (location) => {
     document.documentElement.scrollTop = location;
+}
+
+const onExtend = (params) => {
+    renderOtherProjects({
+        ...params,
+        limit: 7,
+        isExtend: true
+    })
+}
+
+const onCollapse = (params) => {
+    renderOtherProjects({
+        ...params,
+        limit: 6,
+        isExtend: false
+    })
 }
