@@ -15,7 +15,7 @@ let topicSeries = [];
 let menu = [];
 
 let songs = [
-    { src: "https://firebasestorage.googleapis.com/v0/b/ly-project-eaa1d.appspot.com/o/hoa-hong-dai.mp3?alt=media&token=5b9745dc-15cf-44b2-a8a9-efef900fb57c", singer: "Binz" },
+    { src: "https://firebasestorage.googleapis.com/v0/b/ly-project-eaa1d.appspot.com/o/hoa-hong-dai.mp3?alt=media&token=5b9745dc-15cf-44b2-a8a9-efef900fb57c", name: "Hoa Hong Dai", singer: "Binz" },
     { src: "https://firebasestorage.googleapis.com/v0/b/ly-project-eaa1d.appspot.com/o/noi-anh-ve.mp3?alt=media&token=4a3d2d20-81b2-47d9-a485-b74e781b4ae1", name: "Noi Anh Ve", singer: "Binz" }
 ];
 let audioPlayer = new Audio();
