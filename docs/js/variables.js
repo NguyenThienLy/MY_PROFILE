@@ -15,8 +15,8 @@ let topicSeries = [];
 let menu = [];
 
 let songs = [
-    { src: "//mp3-s1-zmp3.zadn.vn/8c93da3bca7c23227a6d/44252409792106644?authen=exp=1588619410~acl=/8c93da3bca7c23227a6d/*~hmac=a3acb7e90f6617d59922c281b981c1fe", name: "Hoa Hong Dai", singer: "Binz" },
-    { src: "https://vnso-zn-16-tf-mcloud-bf-s9-audio-zmp3.zadn.vn/WCSl4t8aEUg/5e9ea6cb7c8b95d5cc9a/6783e03db5785c260569/96/accompaniment_1075755144.m4a?authen=exp=1588616378~acl=/WCSl4t8aEUg/*~hmac=da9607fa0841c82239b4891d43d2ad7b", name: "Noi Anh Ve", singer: "Binz" }
+    { src: "https://firebasestorage.googleapis.com/v0/b/ly-project-eaa1d.appspot.com/o/hoa-hong-dai.mp3?alt=media&token=5b9745dc-15cf-44b2-a8a9-efef900fb57c", singer: "Binz" },
+    { src: "https://firebasestorage.googleapis.com/v0/b/ly-project-eaa1d.appspot.com/o/noi-anh-ve.mp3?alt=media&token=4a3d2d20-81b2-47d9-a485-b74e781b4ae1", name: "Noi Anh Ve", singer: "Binz" }
 ];
 let audioPlayer = new Audio();
 let currentSong = 0;
