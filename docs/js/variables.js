@@ -15,8 +15,8 @@ let topicSeries = [];
 let menu = [];
 
 let songs = [
-    { src: "media/hoa-hong-dai.mp3", name: "Hoa Hong Dai", singer: "Binz" },
-    { src: "media/noi-anh-ve.mp3", name: "Noi Anh Ve", singer: "Binz" }
+    { src: "//mp3-s1-zmp3.zadn.vn/8c93da3bca7c23227a6d/44252409792106644?authen=exp=1588619410~acl=/8c93da3bca7c23227a6d/*~hmac=a3acb7e90f6617d59922c281b981c1fe", name: "Hoa Hong Dai", singer: "Binz" },
+    { src: "https://vnso-zn-16-tf-mcloud-bf-s9-audio-zmp3.zadn.vn/WCSl4t8aEUg/5e9ea6cb7c8b95d5cc9a/6783e03db5785c260569/96/accompaniment_1075755144.m4a?authen=exp=1588616378~acl=/WCSl4t8aEUg/*~hmac=da9607fa0841c82239b4891d43d2ad7b", name: "Noi Anh Ve", singer: "Binz" }
 ];
 let audioPlayer = new Audio();
 let currentSong = 0;
