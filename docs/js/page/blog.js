@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 
 
-    fetch(`${host}/data/socials.json`)
+    fetch(`data/socials.json`)
         .then((response) => {
             return response.json();
         })
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/technicalNotes.json`)
+    fetch(`data/technicalNotes.json`)
         .then((response) => {
             return response.json();
         })
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/myStories.json`)
+    fetch(`data/myStories.json`)
         .then((response) => {
             return response.json();
         })
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/topicSeries.json`)
+    fetch(`data/topicSeries.json`)
         .then((response) => {
             return response.json();
         })
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/mySeries.json`)
+    fetch(`data/mySeries.json`)
         .then((response) => {
             return response.json();
         })

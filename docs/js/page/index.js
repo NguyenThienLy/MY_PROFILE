@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     audioPlaySong();
 
-    fetch(`${host}/data/menu.json`)
+    fetch(`data/menu.json`)
         .then((response) => {
             return response.json();
         })
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/socials.json`)
+    fetch(`data/socials.json`)
         .then((response) => {
             return response.json();
         })
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/projects.json`)
+    fetch(`data/projects.json`)
         .then((response) => {
             return response.json();
         })
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
 
-    fetch(`${host}/data/otherProjects.json`)
+    fetch(`data/otherProjects.json`)
         .then((response) => {
             return response.json();
         })
