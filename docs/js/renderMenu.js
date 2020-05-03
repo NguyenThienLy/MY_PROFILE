@@ -11,7 +11,7 @@ const renderMenuItem = (params) => {
     let location = +item.location;
 
     container.innerHTML += `
-    <li class="header__item primary-txt-color">${item.order}.<a id="${item.id}" class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none">${item.name}</a>
+    <li class="header__item primary-txt-color">${item.order}.<a onclick="onSetScrollTop(${location})" id="${item.id}" class="cursor-pointer header__link ml-7 gray-txt-color txt-decoration-none">${item.name}</a>
     </li>
     `;
 

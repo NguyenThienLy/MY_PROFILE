@@ -48,8 +48,8 @@
             },
             {
                 "name": "Contact",
-                "location": "3600",
-                "id": "btn-my-series-header",
+                "location": "4300",
+                "id": "btn-contact-header",
                 "order": "04"
             }
         ]
