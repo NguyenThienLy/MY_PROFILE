@@ -1,7 +1,7 @@
 [{
         "page": "index",
         "list": [{
-                "name": "about",
+                "name": "About",
                 "location": "800",
                 "id": "btn-about-header",
                 "order": "01"
