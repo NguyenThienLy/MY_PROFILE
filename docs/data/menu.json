@@ -45,12 +45,6 @@
                 "location": "2600",
                 "id": "btn-my-series-header",
                 "order": "03"
-            },
-            {
-                "name": "Contact",
-                "location": "3200",
-                "id": "btn-contact-header",
-                "order": "04"
             }
         ]
     }

@@ -4,7 +4,7 @@ audioPlayer.addEventListener('timeupdate', () => {
     audioFillBar.style.width = position * 100 + '%';
 });
 
-audioPlayer.addEventListener('canplaythrough', () => {
+audioPlayer.addEventListener('load', () => {
     audioPlayer.play();
 });
 
@@ -51,9 +51,7 @@ const audioPlaySong = () => {
     audioUpdateInfo();
 
     audioPlayer.src = songs[currentSong].src;
-    // audioPlayer.play();
 }
-
 
 const audioUpdateInfo = () => {
     audioSongTitle.textContent = songs[currentSong].name;
