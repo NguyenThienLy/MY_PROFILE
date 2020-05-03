@@ -29,22 +29,28 @@
     {
         "page": "blog",
         "list": [{
-                "name": "Technical note",
+                "name": "Tech note",
                 "location": "800",
                 "id": "btn-technical-note-header",
                 "order": "01"
             },
             {
-                "name": "My story",
+                "name": "Story",
                 "location": "1650",
                 "id": "btn-my-story-header",
                 "order": "02"
             },
             {
-                "name": "My series",
+                "name": "Series",
                 "location": "2600",
                 "id": "btn-my-series-header",
                 "order": "03"
+            },
+            {
+                "name": "Contact",
+                "location": "3600",
+                "id": "btn-my-series-header",
+                "order": "04"
             }
         ]
     }

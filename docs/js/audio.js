@@ -13,7 +13,7 @@ audioNext.addEventListener('click', () => {
     if (currentSong > songs.length - 1) {
         currentSong = 0;
     }
-    audioPlaySong();
+    audioPlaySongNow();
     audioUpdateCollapseExtend('image/Pause.png');
 });
 
@@ -22,7 +22,7 @@ audioPrevious.addEventListener('click', () => {
     if (currentSong < 0) {
         currentSong = songs.length - 1;
     }
-    audioPlaySong();
+    audioPlaySongNow();
     audioUpdateCollapseExtend('image/Pause.png');
 });
 
@@ -51,6 +51,13 @@ const audioPlaySong = () => {
     audioUpdateInfo();
 
     audioPlayer.src = songs[currentSong].src;
+}
+
+const audioPlaySongNow = () => {
+    audioUpdateInfo();
+
+    audioPlayer.src = songs[currentSong].src;
+    audioPlayer.play();
 }
 
 const audioUpdateInfo = () => {
