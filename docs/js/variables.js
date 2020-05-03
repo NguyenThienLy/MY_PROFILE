@@ -52,6 +52,11 @@ let gists = [{
         author: 'NguyenThienLy',
         title: 'What is closure?'
     },
+    {
+        _id: '56201f0d7c11b263c5eb2e079ea3b4e5',
+        author: 'NguyenThienLy',
+        title: 'Synthesis about git'
+    },
 ];
 
 // let projects = [

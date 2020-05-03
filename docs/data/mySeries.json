@@ -46,21 +46,18 @@
         "name": "Source control Git",
         "code": "git",
         "list": [{
-            "_id": "4939a7abd67ea114c21b73ac30348b84",
-            "name": "Create CV with BEM - 1",
-            "date": "02/04/2020",
-            "description": "Xin chào tất cả mọi người, trước đây khi mà mình đi xin việc thì đến giai đoạn nộp CV, thì mình hay lên topcv.vn hay là ...",
+            "_id": "56201f0d7c11b263c5eb2e079ea3b4e5",
+            "name": "Synthesis about git",
+            "date": "03/05/2020",
+            "description": "To add a new remote, use the git remote add command on the terminal, in the directory your repository ...",
             "note": "",
             "topics": [
-                { "name": "HTML", "title": "HTML", "link": "#" },
-                { "name": "CSS", "title": "CSS", "link": "#" },
-                { "name": "JS", "title": "JS", "link": "#" },
-                { "name": "BEM", "title": "BEM", "link": "#" },
-                { "name": "gist.github", "title": "gist.github", "link": "#" }
+                { "name": "git", "title": "git", "link": "#" },
+                { "name": "github", "title": "github", "link": "#" }
             ],
             "repos": [
-                { "title": "gist.github", "link": "https://gist.github.com/4939a7abd67ea114c21b73ac30348b84.git", "icon": "fab fa-sm fa-github" },
-                { "title": "dev.to", "link": "https://dev.to/nguyenthienly/create-cv-with-bem-4io1", "icon": "fab fa-sm fa-dev" }
+                { "title": "gist.github", "link": "https://gist.github.com/56201f0d7c11b263c5eb2e079ea3b4e5.git", "icon": "fab fa-sm fa-github" },
+                { "title": "dev.to", "link": "https://dev.to/nguyenthienly/synthesis-about-git-1c0i", "icon": "fab fa-sm fa-dev" }
             ]
         }]
     }
