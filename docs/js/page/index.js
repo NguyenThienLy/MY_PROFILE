@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    window.onload = audioPlaySong;
+    audioPlaySong();
 
     fetch(`${host}/data/menu.json`)
         .then((response) => {

@@ -19,6 +19,7 @@ let songs = [
     { src: "https://firebasestorage.googleapis.com/v0/b/ly-project-eaa1d.appspot.com/o/noi-anh-ve.mp3?alt=media&token=4a3d2d20-81b2-47d9-a485-b74e781b4ae1", name: "Noi Anh Ve", singer: "Binz" }
 ];
 let audioPlayer = new Audio();
+// audioPlayer.autoplay = true;
 let currentSong = 0;
 
 let gists = [{
