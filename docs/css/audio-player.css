@@ -16,7 +16,7 @@
 }
 
 .audio__collapse {
-    /* background-color: blue; */
+    transition: inherit;
 }
 
 .audio__collapse:hover+.audio__extend {
@@ -24,10 +24,13 @@
 }
 
 .audio__extend:hover {
+   
+    /* transition: 3s; */
     display: block;
 }
 
 .audio__extend {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     width: 100%;
     top: 100%;
     border-radius: 15px;

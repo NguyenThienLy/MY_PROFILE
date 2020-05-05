@@ -81,6 +81,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 });
 
+
+document.addEventListener('scroll', (event) => {
+    const maxPage = document.body.offsetHeight - window.innerHeight;
+
+    if (document.documentElement.scrollTop === 0 || document.documentElement.scrollTop === maxPage) {
+        headerPage.style.height = '100px';
+        headerPage.style.transition = 'inherit'
+    }
+    else {
+        headerPage.style.height = '60px';
+        headerPage.style.transition = 'inherit'
+    }
+})
+
+
 // document.addEventListener('scroll', (event) => {
 //   if (document.documentElement.scrollTop > 300 && !isShowedTechnicalNotes) {
 //     isShowedTechnicalNotes = true;
