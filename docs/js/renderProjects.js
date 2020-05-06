@@ -48,8 +48,8 @@ let renderProject = (params) => {
               ${renderRepos(item.repos)}
           </ul>
       </div>
-      <div class="z-index-0 position-absolute d-flex w-60">
-          <img class="project__src border-round w-100" src="${item.img}" alt="${item.name}" />
+      <div class="z-index-0 position-absolute d-flex w-60 ">
+          <img class="project__src border-round w-100 border-shadow-primary" src="${item.img}" alt="${item.name}" />
       </div>
     </div>
   `;

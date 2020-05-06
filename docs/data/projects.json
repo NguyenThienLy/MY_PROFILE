@@ -1,7 +1,7 @@
 [
   {
     "_id": "0",
-    "img": "http://picsum.photos/550",
+    "img": "./image/project-ecommerce.JPG",
     "name": "Ecommerce web app",
     "description": " A commercial web shopping application to help users easily purchase and order management and administration for admin including product deletion and order management.",
     "note": "This project has brought me lots of useful knowledge",
@@ -37,7 +37,7 @@
   },
   {
     "_id": "1",
-    "img": "http://picsum.photos/600",
+    "img": "./image/project-yoga-studio.JPG",
     "name": "Yoga website + webapp",
     "description": "Website showing news for the center to introduce timetable courses, class schedules, teachers, yoga news blog, a dedicated management system for center students.",
     "note": "This is first startup project that my team built",
@@ -83,7 +83,7 @@
   },
   {
     "_id": "2",
-    "img": "http://picsum.photos/650",
+    "img": "./image/project-organic-food.JPG",
     "name": "Organic food web app",
     "description": "   An organic food website for everyone with a friendly interface that makes it easy for users to view items according to orders, the system management for admin includes additional statistical products.",
     "note": "This is first project about web that my team built",
